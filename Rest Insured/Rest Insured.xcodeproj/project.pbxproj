@@ -15,6 +15,9 @@
 		713DB53E1ECA1980007B1428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53D1ECA1980007B1428 /* Assets.xcassets */; };
 		713DB5411ECA1980007B1428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53F1ECA1980007B1428 /* LaunchScreen.storyboard */; };
 		713DB54C1ECA1980007B1428 /* Rest_InsuredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */; };
+		713DB5581ECA4304007B1428 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5571ECA4304007B1428 /* LoginViewController.m */; };
+		713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */; };
+		713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		713DB5471ECA1980007B1428 /* Rest InsuredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest InsuredTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rest_InsuredTests.m; sourceTree = "<group>"; };
 		713DB54D1ECA1980007B1428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713DB5561ECA4304007B1428 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		713DB5571ECA4304007B1428 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		713DB5591ECA4312007B1428 /* RegisterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUserViewController.h; sourceTree = "<group>"; };
+		713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUserViewController.m; sourceTree = "<group>"; };
+		713DB55C1ECA432B007B1428 /* LocationSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSearchViewController.h; sourceTree = "<group>"; };
+		713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,12 @@
 		019AECE01ECA36C200D9C21A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				713DB5561ECA4304007B1428 /* LoginViewController.h */,
+				713DB5571ECA4304007B1428 /* LoginViewController.m */,
+				713DB5591ECA4312007B1428 /* RegisterUserViewController.h */,
+				713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */,
+				713DB55C1ECA432B007B1428 /* LocationSearchViewController.h */,
+				713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */,
 				019AECE31ECA396600D9C21A /* HomeViewController.h */,
 				019AECE41ECA396600D9C21A /* HomeViewController.m */,
 			);
@@ -244,8 +259,11 @@
 			files = (
 				713DB53C1ECA1980007B1428 /* Rest_Insured.xcdatamodeld in Sources */,
 				713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */,
+				713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */,
 				713DB5301ECA1980007B1428 /* main.m in Sources */,
 				019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */,
+				713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */,
+				713DB5581ECA4304007B1428 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
