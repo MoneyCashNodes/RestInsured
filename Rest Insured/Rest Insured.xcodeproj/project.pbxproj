@@ -18,6 +18,10 @@
 		A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */; };
 		A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */; };
 		A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */; };
+		713DB5581ECA4304007B1428 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5571ECA4304007B1428 /* LoginViewController.m */; };
+		713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */; };
+		713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeDetailViewController.m; sourceTree = "<group>"; };
 		A16D4E151ECA6C5A00DE3441 /* SearchInsuranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchInsuranceViewController.h; sourceTree = "<group>"; };
 		A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInsuranceViewController.m; sourceTree = "<group>"; };
+		713DB5561ECA4304007B1428 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		713DB5571ECA4304007B1428 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		713DB5591ECA4312007B1428 /* RegisterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUserViewController.h; sourceTree = "<group>"; };
+		713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUserViewController.m; sourceTree = "<group>"; };
+		713DB55C1ECA432B007B1428 /* LocationSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSearchViewController.h; sourceTree = "<group>"; };
+		713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSearchViewController.m; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +91,12 @@
 				A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */,
 				A16D4E151ECA6C5A00DE3441 /* SearchInsuranceViewController.h */,
 				A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */,
+				713DB5561ECA4304007B1428 /* LoginViewController.h */,
+				713DB5571ECA4304007B1428 /* LoginViewController.m */,
+				713DB5591ECA4312007B1428 /* RegisterUserViewController.h */,
+				713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */,
+				713DB55C1ECA432B007B1428 /* LocationSearchViewController.h */,
+				713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */,
 				019AECE31ECA396600D9C21A /* HomeViewController.h */,
 				019AECE41ECA396600D9C21A /* HomeViewController.m */,
 			);
@@ -261,9 +278,12 @@
 				A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */,
 				A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */,
 				713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */,
+				713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */,
 				713DB5301ECA1980007B1428 /* main.m in Sources */,
 				019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */,
 				A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */,
+				713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */,
+				713DB5581ECA4304007B1428 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
