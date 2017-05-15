@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		713DB5301ECA1980007B1428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB52F1ECA1980007B1428 /* main.m */; };
+		713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5321ECA1980007B1428 /* AppDelegate.m */; };
+		713DB5361ECA1980007B1428 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5351ECA1980007B1428 /* ViewController.m */; };
+		713DB5391ECA1980007B1428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713DB5371ECA1980007B1428 /* Main.storyboard */; };
+		713DB53C1ECA1980007B1428 /* Rest_Insured.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 713DB53A1ECA1980007B1428 /* Rest_Insured.xcdatamodeld */; };
+		713DB53E1ECA1980007B1428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53D1ECA1980007B1428 /* Assets.xcassets */; };
+		713DB5411ECA1980007B1428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53F1ECA1980007B1428 /* LaunchScreen.storyboard */; };
+		713DB54C1ECA1980007B1428 /* Rest_InsuredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		713DB5481ECA1980007B1428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713DB5231ECA1980007B1428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 713DB52A1ECA1980007B1428;
+			remoteInfo = "Rest Insured";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		713DB52B1ECA1980007B1428 /* Rest Insured.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rest Insured.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		713DB52F1ECA1980007B1428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		713DB5311ECA1980007B1428 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		713DB5321ECA1980007B1428 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		713DB5341ECA1980007B1428 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		713DB5351ECA1980007B1428 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		713DB5381ECA1980007B1428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		713DB53B1ECA1980007B1428 /* Rest_Insured.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rest_Insured.xcdatamodel; sourceTree = "<group>"; };
+		713DB53D1ECA1980007B1428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		713DB5401ECA1980007B1428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		713DB5421ECA1980007B1428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713DB5471ECA1980007B1428 /* Rest InsuredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest InsuredTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rest_InsuredTests.m; sourceTree = "<group>"; };
+		713DB54D1ECA1980007B1428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		713DB5281ECA1980007B1428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		713DB5441ECA1980007B1428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		713DB5221ECA1980007B1428 = {
+			isa = PBXGroup;
+			children = (
+				713DB52D1ECA1980007B1428 /* Rest Insured */,
+				713DB54A1ECA1980007B1428 /* Rest InsuredTests */,
+				713DB52C1ECA1980007B1428 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		713DB52C1ECA1980007B1428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				713DB52B1ECA1980007B1428 /* Rest Insured.app */,
+				713DB5471ECA1980007B1428 /* Rest InsuredTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		713DB52D1ECA1980007B1428 /* Rest Insured */ = {
+			isa = PBXGroup;
+			children = (
+				713DB5311ECA1980007B1428 /* AppDelegate.h */,
+				713DB5321ECA1980007B1428 /* AppDelegate.m */,
+				713DB5341ECA1980007B1428 /* ViewController.h */,
+				713DB5351ECA1980007B1428 /* ViewController.m */,
+				713DB5371ECA1980007B1428 /* Main.storyboard */,
+				713DB53D1ECA1980007B1428 /* Assets.xcassets */,
+				713DB53F1ECA1980007B1428 /* LaunchScreen.storyboard */,
+				713DB5421ECA1980007B1428 /* Info.plist */,
+				713DB53A1ECA1980007B1428 /* Rest_Insured.xcdatamodeld */,
+				713DB52E1ECA1980007B1428 /* Supporting Files */,
+			);
+			path = "Rest Insured";
+			sourceTree = "<group>";
+		};
+		713DB52E1ECA1980007B1428 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				713DB52F1ECA1980007B1428 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		713DB54A1ECA1980007B1428 /* Rest InsuredTests */ = {
+			isa = PBXGroup;
+			children = (
+				713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */,
+				713DB54D1ECA1980007B1428 /* Info.plist */,
+			);
+			path = "Rest InsuredTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		713DB52A1ECA1980007B1428 /* Rest Insured */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 713DB5501ECA1980007B1428 /* Build configuration list for PBXNativeTarget "Rest Insured" */;
+			buildPhases = (
+				713DB5271ECA1980007B1428 /* Sources */,
+				713DB5281ECA1980007B1428 /* Frameworks */,
+				713DB5291ECA1980007B1428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rest Insured";
+			productName = "Rest Insured";
+			productReference = 713DB52B1ECA1980007B1428 /* Rest Insured.app */;
+			productType = "com.apple.product-type.application";
+		};
+		713DB5461ECA1980007B1428 /* Rest InsuredTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 713DB5531ECA1980007B1428 /* Build configuration list for PBXNativeTarget "Rest InsuredTests" */;
+			buildPhases = (
+				713DB5431ECA1980007B1428 /* Sources */,
+				713DB5441ECA1980007B1428 /* Frameworks */,
+				713DB5451ECA1980007B1428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				713DB5491ECA1980007B1428 /* PBXTargetDependency */,
+			);
+			name = "Rest InsuredTests";
+			productName = "Rest InsuredTests";
+			productReference = 713DB5471ECA1980007B1428 /* Rest InsuredTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		713DB5231ECA1980007B1428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Brandon Little";
+				TargetAttributes = {
+					713DB52A1ECA1980007B1428 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PQL3EX4TE2;
+						ProvisioningStyle = Automatic;
+					};
+					713DB5461ECA1980007B1428 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PQL3EX4TE2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 713DB52A1ECA1980007B1428;
+					};
+				};
+			};
+			buildConfigurationList = 713DB5261ECA1980007B1428 /* Build configuration list for PBXProject "Rest Insured" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 713DB5221ECA1980007B1428;
+			productRefGroup = 713DB52C1ECA1980007B1428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				713DB52A1ECA1980007B1428 /* Rest Insured */,
+				713DB5461ECA1980007B1428 /* Rest InsuredTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		713DB5291ECA1980007B1428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713DB5411ECA1980007B1428 /* LaunchScreen.storyboard in Resources */,
+				713DB53E1ECA1980007B1428 /* Assets.xcassets in Resources */,
+				713DB5391ECA1980007B1428 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		713DB5451ECA1980007B1428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		713DB5271ECA1980007B1428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713DB53C1ECA1980007B1428 /* Rest_Insured.xcdatamodeld in Sources */,
+				713DB5361ECA1980007B1428 /* ViewController.m in Sources */,
+				713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */,
+				713DB5301ECA1980007B1428 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		713DB5431ECA1980007B1428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713DB54C1ECA1980007B1428 /* Rest_InsuredTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		713DB5491ECA1980007B1428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 713DB52A1ECA1980007B1428 /* Rest Insured */;
+			targetProxy = 713DB5481ECA1980007B1428 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		713DB5371ECA1980007B1428 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				713DB5381ECA1980007B1428 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		713DB53F1ECA1980007B1428 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				713DB5401ECA1980007B1428 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		713DB54E1ECA1980007B1428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		713DB54F1ECA1980007B1428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		713DB5511ECA1980007B1428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQL3EX4TE2;
+				INFOPLIST_FILE = "Rest Insured/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-Insured";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		713DB5521ECA1980007B1428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQL3EX4TE2;
+				INFOPLIST_FILE = "Rest Insured/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-Insured";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		713DB5541ECA1980007B1428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PQL3EX4TE2;
+				INFOPLIST_FILE = "Rest InsuredTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-InsuredTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rest Insured.app/Rest Insured";
+			};
+			name = Debug;
+		};
+		713DB5551ECA1980007B1428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PQL3EX4TE2;
+				INFOPLIST_FILE = "Rest InsuredTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-InsuredTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rest Insured.app/Rest Insured";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		713DB5261ECA1980007B1428 /* Build configuration list for PBXProject "Rest Insured" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713DB54E1ECA1980007B1428 /* Debug */,
+				713DB54F1ECA1980007B1428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		713DB5501ECA1980007B1428 /* Build configuration list for PBXNativeTarget "Rest Insured" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713DB5511ECA1980007B1428 /* Debug */,
+				713DB5521ECA1980007B1428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		713DB5531ECA1980007B1428 /* Build configuration list for PBXNativeTarget "Rest InsuredTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713DB5541ECA1980007B1428 /* Debug */,
+				713DB5551ECA1980007B1428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		713DB53A1ECA1980007B1428 /* Rest_Insured.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				713DB53B1ECA1980007B1428 /* Rest_Insured.xcdatamodel */,
+			);
+			currentVersion = 713DB53B1ECA1980007B1428 /* Rest_Insured.xcdatamodel */;
+			path = Rest_Insured.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 713DB5231ECA1980007B1428 /* Project object */;
+}
