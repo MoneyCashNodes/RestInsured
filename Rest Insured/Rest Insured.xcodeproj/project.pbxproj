@@ -15,6 +15,9 @@
 		713DB53E1ECA1980007B1428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53D1ECA1980007B1428 /* Assets.xcassets */; };
 		713DB5411ECA1980007B1428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53F1ECA1980007B1428 /* LaunchScreen.storyboard */; };
 		713DB54C1ECA1980007B1428 /* Rest_InsuredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */; };
+		A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */; };
+		A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */; };
+		A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		713DB5471ECA1980007B1428 /* Rest InsuredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest InsuredTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rest_InsuredTests.m; sourceTree = "<group>"; };
 		713DB54D1ECA1980007B1428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16D4E0F1ECA6BFE00DE3441 /* DoctorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDetailViewController.h; sourceTree = "<group>"; };
+		A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDetailViewController.m; sourceTree = "<group>"; };
+		A16D4E121ECA6C1500DE3441 /* PracticeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeDetailViewController.h; sourceTree = "<group>"; };
+		A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeDetailViewController.m; sourceTree = "<group>"; };
+		A16D4E151ECA6C5A00DE3441 /* SearchInsuranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchInsuranceViewController.h; sourceTree = "<group>"; };
+		A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInsuranceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,12 @@
 		019AECE01ECA36C200D9C21A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A16D4E0F1ECA6BFE00DE3441 /* DoctorDetailViewController.h */,
+				A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */,
+				A16D4E121ECA6C1500DE3441 /* PracticeDetailViewController.h */,
+				A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */,
+				A16D4E151ECA6C5A00DE3441 /* SearchInsuranceViewController.h */,
+				A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */,
 				019AECE31ECA396600D9C21A /* HomeViewController.h */,
 				019AECE41ECA396600D9C21A /* HomeViewController.m */,
 			);
@@ -243,9 +258,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				713DB53C1ECA1980007B1428 /* Rest_Insured.xcdatamodeld in Sources */,
+				A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */,
+				A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */,
 				713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */,
 				713DB5301ECA1980007B1428 /* main.m in Sources */,
 				019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */,
+				A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
