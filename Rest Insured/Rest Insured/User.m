@@ -8,6 +8,7 @@
 
 #import "User.h"
 
+
 @interface User ()
 
 @property(strong, nonatomic)NSString *fullName;
