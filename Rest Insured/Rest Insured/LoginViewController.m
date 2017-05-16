@@ -23,6 +23,7 @@
 }
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
+    [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
 }
 
 

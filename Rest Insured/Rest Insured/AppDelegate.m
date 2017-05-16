@@ -18,7 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"kuserLoggedIn"]) {
+        //Checks if the user is logged in and if not go to LoginViewController
+    } else {
+        //show RegisterUserViewController
+    }
     return YES;
 }
 
