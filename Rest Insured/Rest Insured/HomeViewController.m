@@ -11,6 +11,7 @@
 #import "User.h"
 
 @interface HomeViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *locationTextField;
 @property (weak, nonatomic) IBOutlet UIButton *getCurrentLocationButton;
@@ -23,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self checkCurrentUser];
 }
 
 //Check for currentUser, push to LoginViewController if nil
@@ -32,6 +35,8 @@
         [self.navigationController pushViewController:loginView animated:YES];
     }
 }
+
+
 
 - (IBAction)findButtonPressed:(id)sender {
     

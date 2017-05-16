@@ -11,6 +11,8 @@
 		0181051F1ECB816400F33FDD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0181051E1ECB816400F33FDD /* MapViewController.m */; };
 		018105221ECB98DB00F33FDD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018105211ECB98DB00F33FDD /* MapKit.framework */; };
 		019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019AECE41ECA396600D9C21A /* HomeViewController.m */; };
+		7111909E1ECBA08F00A4904D /* Practice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7111909D1ECBA08F00A4904D /* Practice.m */; };
+		711190A11ECBA0A100A4904D /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 711190A01ECBA0A100A4904D /* Doctor.m */; };
 		713DB5301ECA1980007B1428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB52F1ECA1980007B1428 /* main.m */; };
 		713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5321ECA1980007B1428 /* AppDelegate.m */; };
 		713DB5391ECA1980007B1428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713DB5371ECA1980007B1428 /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 		018105211ECB98DB00F33FDD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		019AECE31ECA396600D9C21A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		019AECE41ECA396600D9C21A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		7111909C1ECBA08F00A4904D /* Practice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Practice.h; sourceTree = "<group>"; };
+		7111909D1ECBA08F00A4904D /* Practice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Practice.m; sourceTree = "<group>"; };
+		7111909F1ECBA0A100A4904D /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		711190A01ECBA0A100A4904D /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		713DB52B1ECA1980007B1428 /* Rest Insured.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rest Insured.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713DB52F1ECA1980007B1428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		713DB5311ECA1980007B1428 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +137,10 @@
 				A16D4E181ECB60C800DE3441 /* User.h */,
 				A16D4E191ECB60C800DE3441 /* User.m */,
 				713DB53A1ECA1980007B1428 /* Rest_Insured.xcdatamodeld */,
+				7111909C1ECBA08F00A4904D /* Practice.h */,
+				7111909D1ECBA08F00A4904D /* Practice.m */,
+				7111909F1ECBA0A100A4904D /* Doctor.h */,
+				711190A01ECBA0A100A4904D /* Doctor.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -306,11 +316,13 @@
 			files = (
 				713DB53C1ECA1980007B1428 /* Rest_Insured.xcdatamodeld in Sources */,
 				A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */,
+				7111909E1ECBA08F00A4904D /* Practice.m in Sources */,
 				A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */,
 				713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */,
 				713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */,
 				713DB5301ECA1980007B1428 /* main.m in Sources */,
 				A16D4E1A1ECB60C800DE3441 /* User.m in Sources */,
+				711190A11ECBA0A100A4904D /* Doctor.m in Sources */,
 				0181051F1ECB816400F33FDD /* MapViewController.m in Sources */,
 				019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */,
 				A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */,
