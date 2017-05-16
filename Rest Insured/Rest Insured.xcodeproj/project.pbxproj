@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0181051C1ECB782E00F33FDD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0181051B1ECB782E00F33FDD /* ProfileViewController.m */; };
+		0181051F1ECB816400F33FDD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0181051E1ECB816400F33FDD /* MapViewController.m */; };
+		018105221ECB98DB00F33FDD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018105211ECB98DB00F33FDD /* MapKit.framework */; };
 		019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019AECE41ECA396600D9C21A /* HomeViewController.m */; };
 		713DB5301ECA1980007B1428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB52F1ECA1980007B1428 /* main.m */; };
 		713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5321ECA1980007B1428 /* AppDelegate.m */; };
@@ -38,6 +40,9 @@
 /* Begin PBXFileReference section */
 		0181051A1ECB782E00F33FDD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		0181051B1ECB782E00F33FDD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		0181051D1ECB816400F33FDD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0181051E1ECB816400F33FDD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		018105211ECB98DB00F33FDD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		019AECE31ECA396600D9C21A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		019AECE41ECA396600D9C21A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		713DB52B1ECA1980007B1428 /* Rest Insured.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rest Insured.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018105221ECB98DB00F33FDD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		018105201ECB98DB00F33FDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018105211ECB98DB00F33FDD /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		019AECE01ECA36C200D9C21A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0181051D1ECB816400F33FDD /* MapViewController.h */,
+				0181051E1ECB816400F33FDD /* MapViewController.m */,
 				0181051A1ECB782E00F33FDD /* ProfileViewController.h */,
 				0181051B1ECB782E00F33FDD /* ProfileViewController.m */,
 				A16D4E0F1ECA6BFE00DE3441 /* DoctorDetailViewController.h */,
@@ -135,6 +151,7 @@
 				713DB52D1ECA1980007B1428 /* Rest Insured */,
 				713DB54A1ECA1980007B1428 /* Rest InsuredTests */,
 				713DB52C1ECA1980007B1428 /* Products */,
+				018105201ECB98DB00F33FDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +246,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = PQL3EX4TE2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					713DB5461ECA1980007B1428 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -289,6 +311,7 @@
 				713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */,
 				713DB5301ECA1980007B1428 /* main.m in Sources */,
 				A16D4E1A1ECB60C800DE3441 /* User.m in Sources */,
+				0181051F1ECB816400F33FDD /* MapViewController.m in Sources */,
 				019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */,
 				A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */,
 				713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */,
