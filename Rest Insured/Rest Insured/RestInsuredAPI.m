@@ -12,7 +12,7 @@
 
 + (void)practiceSearch:(PracticeSearchCompletion)completion{
     
-    NSString *urlString = [NSString stringWithFormat:@"http://localhost:3000/Providers"];
+    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured.herokuapp.com/ext/doctors?lat=47.606&lon=-122.332&range=10&insurance=regenceblueshieldofwashinton-regencewapreferredprovidernetwork&limit=5"];
     
     NSURL *databaseURL = [NSURL URLWithString:urlString];
     

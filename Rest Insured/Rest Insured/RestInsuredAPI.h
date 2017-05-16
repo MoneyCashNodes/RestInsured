@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Practice.h"
 
-typedef void(^PracticeSearchCompletion)(NSArray<Practice *> *allTodos);
+typedef void(^PracticeSearchCompletion)(NSArray<Practice *> *allPractices);
 
 @interface RestInsuredAPI : NSObject
 

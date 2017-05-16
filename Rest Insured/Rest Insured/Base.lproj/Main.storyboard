@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="77T-vy-S8A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="77T-vy-S8A">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -58,7 +58,6 @@
                                 </state>
                                 <connections>
                                     <action selector="findButtonPressed:" destination="77T-vy-S8A" eventType="touchUpInside" id="FuE-E9-SOA"/>
-                                    <segue destination="P9g-Gk-OvN" kind="show" id="Ba9-Kk-osT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-vL-xPm">
@@ -95,6 +94,7 @@
                         <outlet property="getCurrentLocationButton" destination="fol-YW-JoI" id="4h9-iU-OFu"/>
                         <outlet property="locationTextField" destination="P15-ye-EGe" id="ijC-6I-ie6"/>
                         <outlet property="welcomeLabel" destination="lp8-vL-xPm" id="7Gm-0E-u1u"/>
+                        <segue destination="P9g-Gk-OvN" kind="show" id="oxM-9n-Q6A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpF-Vj-SFs" userLabel="First Responder" sceneMemberID="firstResponder"/>

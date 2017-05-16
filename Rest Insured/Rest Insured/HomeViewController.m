@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "LoginViewController.h"
 #import "User.h"
+#import "RestInsuredAPI.h"
 
 @interface HomeViewController ()
 
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *getCurrentLocationButton;
 
 @property (strong, nonatomic) User *currentUser;
+@property (strong, nonatomic) NSArray<Practice *> *practices;
 
 @end
 
@@ -40,7 +42,9 @@
 
 - (IBAction)findButtonPressed:(id)sender {
     
-    
+    [RestInsuredAPI practiceSearch:^(NSArray<Practice *> *allPractices) {
+        self.practices = allPractices;
+    }];
     
 }
 
