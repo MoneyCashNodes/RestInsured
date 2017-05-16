@@ -18,6 +18,14 @@
             latitude:(NSNumber *)latitude
            longitude:(NSNumber *)longitude{
     
+    self.practiceName = name;
+    self.street = name;
+    self.state = state;
+    self.zip = zip;
+    self.phone = phone;
+    self.latitude = latitude;
+    self.longitude = longitude;
+    
 }
 
 @end

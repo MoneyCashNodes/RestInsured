@@ -13,6 +13,7 @@
 		019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019AECE41ECA396600D9C21A /* HomeViewController.m */; };
 		7111909E1ECBA08F00A4904D /* Practice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7111909D1ECBA08F00A4904D /* Practice.m */; };
 		711190A11ECBA0A100A4904D /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 711190A01ECBA0A100A4904D /* Doctor.m */; };
+		711190A41ECBAC0B00A4904D /* RestInsuredAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 711190A31ECBAC0B00A4904D /* RestInsuredAPI.m */; };
 		713DB5301ECA1980007B1428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB52F1ECA1980007B1428 /* main.m */; };
 		713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5321ECA1980007B1428 /* AppDelegate.m */; };
 		713DB5391ECA1980007B1428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713DB5371ECA1980007B1428 /* Main.storyboard */; };
@@ -51,6 +52,8 @@
 		7111909D1ECBA08F00A4904D /* Practice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Practice.m; sourceTree = "<group>"; };
 		7111909F1ECBA0A100A4904D /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
 		711190A01ECBA0A100A4904D /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		711190A21ECBAC0B00A4904D /* RestInsuredAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestInsuredAPI.h; sourceTree = "<group>"; };
+		711190A31ECBAC0B00A4904D /* RestInsuredAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestInsuredAPI.m; sourceTree = "<group>"; };
 		713DB52B1ECA1980007B1428 /* Rest Insured.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rest Insured.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713DB52F1ECA1980007B1428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		713DB5311ECA1980007B1428 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				7111909D1ECBA08F00A4904D /* Practice.m */,
 				7111909F1ECBA0A100A4904D /* Doctor.h */,
 				711190A01ECBA0A100A4904D /* Doctor.m */,
+				711190A21ECBAC0B00A4904D /* RestInsuredAPI.h */,
+				711190A31ECBAC0B00A4904D /* RestInsuredAPI.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */,
 				A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */,
 				713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */,
+				711190A41ECBAC0B00A4904D /* RestInsuredAPI.m in Sources */,
 				0181051C1ECB782E00F33FDD /* ProfileViewController.m in Sources */,
 				713DB5581ECA4304007B1428 /* LoginViewController.m in Sources */,
 			);
