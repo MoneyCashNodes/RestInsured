@@ -15,13 +15,13 @@
 		713DB53E1ECA1980007B1428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53D1ECA1980007B1428 /* Assets.xcassets */; };
 		713DB5411ECA1980007B1428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713DB53F1ECA1980007B1428 /* LaunchScreen.storyboard */; };
 		713DB54C1ECA1980007B1428 /* Rest_InsuredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */; };
-		A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */; };
-		A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */; };
-		A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */; };
 		713DB5581ECA4304007B1428 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB5571ECA4304007B1428 /* LoginViewController.m */; };
 		713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */; };
 		713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */; };
-
+		A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */; };
+		A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */; };
+		A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */; };
+		A16D4E1A1ECB60C800DE3441 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E191ECB60C800DE3441 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,19 +49,20 @@
 		713DB5471ECA1980007B1428 /* Rest InsuredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest InsuredTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713DB54B1ECA1980007B1428 /* Rest_InsuredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rest_InsuredTests.m; sourceTree = "<group>"; };
 		713DB54D1ECA1980007B1428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A16D4E0F1ECA6BFE00DE3441 /* DoctorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDetailViewController.h; sourceTree = "<group>"; };
-		A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDetailViewController.m; sourceTree = "<group>"; };
-		A16D4E121ECA6C1500DE3441 /* PracticeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeDetailViewController.h; sourceTree = "<group>"; };
-		A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeDetailViewController.m; sourceTree = "<group>"; };
-		A16D4E151ECA6C5A00DE3441 /* SearchInsuranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchInsuranceViewController.h; sourceTree = "<group>"; };
-		A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInsuranceViewController.m; sourceTree = "<group>"; };
 		713DB5561ECA4304007B1428 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		713DB5571ECA4304007B1428 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		713DB5591ECA4312007B1428 /* RegisterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUserViewController.h; sourceTree = "<group>"; };
 		713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUserViewController.m; sourceTree = "<group>"; };
 		713DB55C1ECA432B007B1428 /* LocationSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSearchViewController.h; sourceTree = "<group>"; };
 		713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSearchViewController.m; sourceTree = "<group>"; };
-
+		A16D4E0F1ECA6BFE00DE3441 /* DoctorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDetailViewController.h; sourceTree = "<group>"; };
+		A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDetailViewController.m; sourceTree = "<group>"; };
+		A16D4E121ECA6C1500DE3441 /* PracticeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeDetailViewController.h; sourceTree = "<group>"; };
+		A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeDetailViewController.m; sourceTree = "<group>"; };
+		A16D4E151ECA6C5A00DE3441 /* SearchInsuranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchInsuranceViewController.h; sourceTree = "<group>"; };
+		A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInsuranceViewController.m; sourceTree = "<group>"; };
+		A16D4E181ECB60C800DE3441 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A16D4E191ECB60C800DE3441 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,8 @@
 		019AECE11ECA36EA00D9C21A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A16D4E181ECB60C800DE3441 /* User.h */,
+				A16D4E191ECB60C800DE3441 /* User.m */,
 				713DB53A1ECA1980007B1428 /* Rest_Insured.xcdatamodeld */,
 			);
 			name = Models;
@@ -280,6 +283,7 @@
 				713DB5331ECA1980007B1428 /* AppDelegate.m in Sources */,
 				713DB55B1ECA4312007B1428 /* RegisterUserViewController.m in Sources */,
 				713DB5301ECA1980007B1428 /* main.m in Sources */,
+				A16D4E1A1ECB60C800DE3441 /* User.m in Sources */,
 				019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */,
 				A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */,
 				713DB55E1ECA432B007B1428 /* LocationSearchViewController.m in Sources */,
