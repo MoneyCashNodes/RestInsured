@@ -22,9 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvb-T5-V7W">
-                                <rect key="frame" x="12" y="32" width="72" height="36"/>
+                                <rect key="frame" x="12" y="32" width="53" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Account">
+                                <state key="normal" title="Profile">
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -117,7 +117,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="E9W-RN-BsM" detailTextLabel="WFF-ie-FX2" style="IBUITableViewCellStyleSubtitle" id="N6q-re-2f6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="E9W-RN-BsM" detailTextLabel="WFF-ie-FX2" style="IBUITableViewCellStyleSubtitle" id="N6q-re-2f6">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N6q-re-2f6" id="cqa-Jv-FEn">
@@ -180,7 +180,7 @@
                                 <rect key="frame" x="0.0" y="168" width="375" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="yBh-an-ClC" detailTextLabel="Mx1-ay-ph2" style="IBUITableViewCellStyleSubtitle" id="Kkc-LZ-vQb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="yBh-an-ClC" detailTextLabel="Mx1-ay-ph2" style="IBUITableViewCellStyleSubtitle" id="Kkc-LZ-vQb">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kkc-LZ-vQb" id="9Jy-rV-7q1">
@@ -354,7 +354,7 @@
         <!--Login View Controller-->
         <scene sceneID="gCz-uY-f8A">
             <objects>
-                <viewController id="xb6-CY-0yO" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="xb6-CY-0yO" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yf0-nK-aN6"/>
                         <viewControllerLayoutGuide type="bottom" id="2YC-65-n2w"/>
@@ -533,10 +533,10 @@
             </objects>
             <point key="canvasLocation" x="1969" y="-1413"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="SMt-hN-nL0">
             <objects>
-                <viewController id="sDY-a1-7dI" sceneMemberID="viewController">
+                <viewController id="sDY-a1-7dI" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KpR-pa-mVb"/>
                         <viewControllerLayoutGuide type="bottom" id="CtL-b5-T9m"/>
@@ -564,6 +564,12 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insurance Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-3R-9sq">
+                                <rect key="frame" x="106" y="322" width="163" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P61-su-PyI">
                                 <rect key="frame" x="125" y="430" width="124" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
@@ -576,6 +582,9 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logoutUser:" destination="sDY-a1-7dI" eventType="touchUpInside" id="M2X-vz-Wnw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ay0-dA-5w2">
                                 <rect key="frame" x="153.5" y="32" width="67" height="36"/>
@@ -583,13 +592,10 @@
                                 <state key="normal" title="Dismiss">
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="dismissController:" destination="sDY-a1-7dI" eventType="touchUpInside" id="sPe-tn-q3o"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insurance Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-3R-9sq">
-                                <rect key="frame" x="106" y="322" width="163" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -609,6 +615,13 @@
                             <constraint firstItem="Ay0-dA-5w2" firstAttribute="top" secondItem="KpR-pa-mVb" secondAttribute="bottom" constant="12" id="tYE-Wy-bcw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImage" destination="RkW-S8-UwF" id="lyA-88-BxM"/>
+                        <outlet property="userEmailAddress" destination="P61-su-PyI" id="ArC-Oc-fyy"/>
+                        <outlet property="userFullName" destination="rcK-EP-NC6" id="sC5-h7-N3N"/>
+                        <outlet property="userInsurance" destination="CGn-3R-9sq" id="vX4-YM-sTm"/>
+                        <outlet property="userLocation" destination="ja1-vY-uQ6" id="La1-Lb-vue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLZ-H7-A9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
