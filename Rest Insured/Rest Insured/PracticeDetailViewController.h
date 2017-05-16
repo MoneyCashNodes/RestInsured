@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MapKit;
 
 @interface PracticeDetailViewController : UIViewController
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocation *location;
+-(void)locationControllerUpdatedLocation:(CLLocation *)location;
+
 
 @end
