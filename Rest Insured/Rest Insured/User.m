@@ -8,14 +8,12 @@
 
 #import "User.h"
 
-
 @interface User ()
 
 @property(strong, nonatomic)NSString *fullName;
 @property(strong, nonatomic)NSString *email;
 @property(strong, nonatomic)NSString *providerName;
 @property(strong, nonatomic)NSString *providerID;
-
 
 @end
 
