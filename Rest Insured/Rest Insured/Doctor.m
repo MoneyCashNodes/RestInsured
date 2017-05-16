@@ -10,4 +10,12 @@
 
 @implementation Doctor
 
+- (void)initWithName:(NSString *)name
+        andSpecialty:(NSString *)specialty{
+    
+    self.doctorName = name;
+    self.specialty = specialty;
+    
+}
+
 @end
