@@ -28,6 +28,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)logoutUser:(UIButton *)sender {
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"kUserloggedIn"];
     [self dismissViewControllerAnimated:YES completion:nil];
     LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
     [self presentViewController:loginVC animated:YES completion:nil];
