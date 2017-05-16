@@ -9,6 +9,9 @@
 #import "HomeViewController.h"
 
 @interface HomeViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
+@property (weak, nonatomic) IBOutlet UITextField *locationTextField;
+@property (weak, nonatomic) IBOutlet UIButton *getCurrentLocationButton;
 
 @end
 
@@ -16,6 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (IBAction)findButtonPressed:(id)sender {
 }
 
 @end
