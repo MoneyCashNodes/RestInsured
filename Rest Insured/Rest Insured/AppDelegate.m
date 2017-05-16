@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "User.h"
+
 
 @interface AppDelegate ()
 
