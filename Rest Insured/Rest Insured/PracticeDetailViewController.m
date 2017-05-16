@@ -9,6 +9,10 @@
 #import "PracticeDetailViewController.h"
 
 @interface PracticeDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *practiceNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *practiceLocationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *practicePhoneLabel;
+@property (weak, nonatomic) IBOutlet UITableView *doctorsTableView;
 
 @end
 

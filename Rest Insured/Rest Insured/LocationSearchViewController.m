@@ -9,6 +9,7 @@
 #import "LocationSearchViewController.h"
 
 @interface LocationSearchViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *resultsTableView;
 
 @end
 

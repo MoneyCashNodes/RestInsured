@@ -57,6 +57,7 @@
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="findButtonPressed:" destination="77T-vy-S8A" eventType="touchUpInside" id="FuE-E9-SOA"/>
                                     <segue destination="P9g-Gk-OvN" kind="show" id="Ba9-Kk-osT"/>
                                 </connections>
                             </button>
@@ -90,15 +91,20 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="JNU-Tk-gqY"/>
                     <navigationItem key="navigationItem" id="jYO-ew-SmB"/>
+                    <connections>
+                        <outlet property="getCurrentLocationButton" destination="fol-YW-JoI" id="4h9-iU-OFu"/>
+                        <outlet property="locationTextField" destination="P15-ye-EGe" id="ijC-6I-ie6"/>
+                        <outlet property="welcomeLabel" destination="lp8-vL-xPm" id="7Gm-0E-u1u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpF-Vj-SFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="990" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Location Search View Controller-->
         <scene sceneID="Sld-lh-lYz">
             <objects>
-                <viewController id="P9g-Gk-OvN" sceneMemberID="viewController">
+                <viewController id="P9g-Gk-OvN" customClass="LocationSearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e3u-ss-aIG"/>
                         <viewControllerLayoutGuide type="bottom" id="7s8-MT-IGA"/>
@@ -150,15 +156,18 @@
                             <constraint firstAttribute="trailing" secondItem="vgZ-SN-Lo7" secondAttribute="trailing" id="xgP-fj-3zX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultsTableView" destination="vgZ-SN-Lo7" id="n4U-Ci-f1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jn6-cy-TRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1968.8" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Practice Detail View Controller-->
         <scene sceneID="OIT-2F-onC">
             <objects>
-                <viewController id="jvE-dn-1ZM" sceneMemberID="viewController">
+                <viewController id="jvE-dn-1ZM" customClass="PracticeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lUa-5g-fEb"/>
                         <viewControllerLayoutGuide type="bottom" id="new-6y-rej"/>
@@ -214,6 +223,12 @@
                             <constraint firstItem="GQJ-LB-jOI" firstAttribute="centerX" secondItem="oa4-6h-IAt" secondAttribute="centerX" id="vLE-HG-AXJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doctorsTableView" destination="12h-0h-4Q3" id="bHC-lK-MyP"/>
+                        <outlet property="practiceLocationLabel" destination="C7G-sW-xld" id="0kI-Kp-7Un"/>
+                        <outlet property="practiceNameLabel" destination="GQJ-LB-jOI" id="8D0-gt-Aq6"/>
+                        <outlet property="practicePhoneLabel" destination="Eh7-15-SHJ" id="CfO-1h-0FU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KM0-WS-hIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
