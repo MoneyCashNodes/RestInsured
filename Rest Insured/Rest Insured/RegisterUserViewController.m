@@ -8,11 +8,14 @@
 
 #import "RegisterUserViewController.h"
 
+@import SearchTextField;
+
 @interface RegisterUserViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *registerFullName;
 @property (weak, nonatomic) IBOutlet UITextField *registerEmailAddress;
 @property (weak, nonatomic) IBOutlet UITextField *registerPassword;
-@property (weak, nonatomic) IBOutlet UITextField *insuranceProvider;
+@property (weak, nonatomic) IBOutlet SearchTextField *insuranceProvider;
+
 
 @end
 
@@ -21,6 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
 }
 
 - (IBAction)registerButtonPressed:(UIButton *)sender {

@@ -11,6 +11,8 @@
 		0181051F1ECB816400F33FDD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0181051E1ECB816400F33FDD /* MapViewController.m */; };
 		018105221ECB98DB00F33FDD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018105211ECB98DB00F33FDD /* MapKit.framework */; };
 		019AECE51ECA396600D9C21A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019AECE41ECA396600D9C21A /* HomeViewController.m */; };
+		2B3049E2586C07AE717CF880 /* Pods_Rest_InsuredTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9977AA282D6391FA0C2BB34D /* Pods_Rest_InsuredTests.framework */; };
+		6F272AB0E069333663BCA2A1 /* Pods_Rest_Insured.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5235C0671CFDB82B6840BCF9 /* Pods_Rest_Insured.framework */; };
 		7111909E1ECBA08F00A4904D /* Practice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7111909D1ECBA08F00A4904D /* Practice.m */; };
 		711190A11ECBA0A100A4904D /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 711190A01ECBA0A100A4904D /* Doctor.m */; };
 		711190A41ECBAC0B00A4904D /* RestInsuredAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 711190A31ECBAC0B00A4904D /* RestInsuredAPI.m */; };
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0016A46B81B674F841AE83EB /* Pods-Rest Insured.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rest Insured.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rest Insured/Pods-Rest Insured.debug.xcconfig"; sourceTree = "<group>"; };
 		0181051A1ECB782E00F33FDD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		0181051B1ECB782E00F33FDD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		0181051D1ECB816400F33FDD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		018105211ECB98DB00F33FDD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		019AECE31ECA396600D9C21A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		019AECE41ECA396600D9C21A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		114074C51D4FAFC50A8EADCD /* Pods-Rest Insured.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rest Insured.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rest Insured/Pods-Rest Insured.release.xcconfig"; sourceTree = "<group>"; };
+		366816E0CE4B02F50F95785F /* Pods-Rest InsuredTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rest InsuredTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rest InsuredTests/Pods-Rest InsuredTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5235C0671CFDB82B6840BCF9 /* Pods_Rest_Insured.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rest_Insured.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7111909C1ECBA08F00A4904D /* Practice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Practice.h; sourceTree = "<group>"; };
 		7111909D1ECBA08F00A4904D /* Practice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Practice.m; sourceTree = "<group>"; };
 		7111909F1ECBA0A100A4904D /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 		713DB55A1ECA4312007B1428 /* RegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUserViewController.m; sourceTree = "<group>"; };
 		713DB55C1ECA432B007B1428 /* LocationSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSearchViewController.h; sourceTree = "<group>"; };
 		713DB55D1ECA432B007B1428 /* LocationSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSearchViewController.m; sourceTree = "<group>"; };
+		9977AA282D6391FA0C2BB34D /* Pods_Rest_InsuredTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rest_InsuredTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16D4E0F1ECA6BFE00DE3441 /* DoctorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDetailViewController.h; sourceTree = "<group>"; };
 		A16D4E101ECA6BFE00DE3441 /* DoctorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDetailViewController.m; sourceTree = "<group>"; };
 		A16D4E121ECA6C1500DE3441 /* PracticeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeDetailViewController.h; sourceTree = "<group>"; };
@@ -80,6 +87,7 @@
 		A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInsuranceViewController.m; sourceTree = "<group>"; };
 		A16D4E181ECB60C800DE3441 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A16D4E191ECB60C800DE3441 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A1C66C4949F1D8A0FC3E2BE6 /* Pods-Rest InsuredTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rest InsuredTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rest InsuredTests/Pods-Rest InsuredTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				018105221ECB98DB00F33FDD /* MapKit.framework in Frameworks */,
+				6F272AB0E069333663BCA2A1 /* Pods_Rest_Insured.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3049E2586C07AE717CF880 /* Pods_Rest_InsuredTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				018105211ECB98DB00F33FDD /* MapKit.framework */,
+				5235C0671CFDB82B6840BCF9 /* Pods_Rest_Insured.framework */,
+				9977AA282D6391FA0C2BB34D /* Pods_Rest_InsuredTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,6 +179,7 @@
 				713DB54A1ECA1980007B1428 /* Rest InsuredTests */,
 				713DB52C1ECA1980007B1428 /* Products */,
 				018105201ECB98DB00F33FDD /* Frameworks */,
+				8DBD0CE717ED9A22768D95CD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +223,17 @@
 			path = "Rest InsuredTests";
 			sourceTree = "<group>";
 		};
+		8DBD0CE717ED9A22768D95CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0016A46B81B674F841AE83EB /* Pods-Rest Insured.debug.xcconfig */,
+				114074C51D4FAFC50A8EADCD /* Pods-Rest Insured.release.xcconfig */,
+				366816E0CE4B02F50F95785F /* Pods-Rest InsuredTests.debug.xcconfig */,
+				A1C66C4949F1D8A0FC3E2BE6 /* Pods-Rest InsuredTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 713DB5501ECA1980007B1428 /* Build configuration list for PBXNativeTarget "Rest Insured" */;
 			buildPhases = (
+				61711B15A58FD9C128ED71A1 /* [CP] Check Pods Manifest.lock */,
 				713DB5271ECA1980007B1428 /* Sources */,
 				713DB5281ECA1980007B1428 /* Frameworks */,
 				713DB5291ECA1980007B1428 /* Resources */,
+				66C73B7C900D715E7B7F680F /* [CP] Embed Pods Frameworks */,
+				2D222DAE271B27B808E0CE35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 713DB5531ECA1980007B1428 /* Build configuration list for PBXNativeTarget "Rest InsuredTests" */;
 			buildPhases = (
+				278D2699A2CC3EF5635D11F8 /* [CP] Check Pods Manifest.lock */,
 				713DB5431ECA1980007B1428 /* Sources */,
 				713DB5441ECA1980007B1428 /* Frameworks */,
 				713DB5451ECA1980007B1428 /* Resources */,
+				077DF6666890276C70E572FC /* [CP] Embed Pods Frameworks */,
+				7ED0BAA0509C02D54138A48D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,6 +343,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		077DF6666890276C70E572FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rest InsuredTests/Pods-Rest InsuredTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		278D2699A2CC3EF5635D11F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D222DAE271B27B808E0CE35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rest Insured/Pods-Rest Insured-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61711B15A58FD9C128ED71A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		66C73B7C900D715E7B7F680F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rest Insured/Pods-Rest Insured-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED0BAA0509C02D54138A48D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rest InsuredTests/Pods-Rest InsuredTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		713DB5271ECA1980007B1428 /* Sources */ = {
@@ -470,6 +593,7 @@
 		};
 		713DB5511ECA1980007B1428 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0016A46B81B674F841AE83EB /* Pods-Rest Insured.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PQL3EX4TE2;
@@ -483,6 +607,7 @@
 		};
 		713DB5521ECA1980007B1428 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114074C51D4FAFC50A8EADCD /* Pods-Rest Insured.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PQL3EX4TE2;
@@ -496,6 +621,7 @@
 		};
 		713DB5541ECA1980007B1428 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366816E0CE4B02F50F95785F /* Pods-Rest InsuredTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = PQL3EX4TE2;
@@ -509,6 +635,7 @@
 		};
 		713DB5551ECA1980007B1428 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C66C4949F1D8A0FC3E2BE6 /* Pods-Rest InsuredTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = PQL3EX4TE2;
