@@ -19,9 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.navigationController setNavigationBarHidden:YES];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES];
 
+}
 - (IBAction)loginButtonPressed:(UIButton *)sender {
     [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
 }
