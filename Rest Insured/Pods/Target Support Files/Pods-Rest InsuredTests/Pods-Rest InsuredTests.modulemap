@@ -1,0 +1,6 @@
+framework module Pods_Rest_InsuredTests {
+  umbrella header "Pods-Rest InsuredTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
