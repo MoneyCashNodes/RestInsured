@@ -30,6 +30,8 @@
 		A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E131ECA6C1500DE3441 /* PracticeDetailViewController.m */; };
 		A16D4E171ECA6C5A00DE3441 /* SearchInsuranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */; };
 		A16D4E1A1ECB60C800DE3441 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E191ECB60C800DE3441 /* User.m */; };
+		A16D4E201ECCEE3700DE3441 /* UserSignupAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E1F1ECCEE3700DE3441 /* UserSignupAPI.m */; };
+		A16D4E231ECCEE4600DE3441 /* UserLoginAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D4E221ECCEE4600DE3441 /* UserLoginAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +89,13 @@
 		A16D4E161ECA6C5A00DE3441 /* SearchInsuranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInsuranceViewController.m; sourceTree = "<group>"; };
 		A16D4E181ECB60C800DE3441 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A16D4E191ECB60C800DE3441 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A16D4E1E1ECCEE3700DE3441 /* UserSignupAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSignupAPI.h; sourceTree = "<group>"; };
+		A16D4E1F1ECCEE3700DE3441 /* UserSignupAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSignupAPI.m; sourceTree = "<group>"; };
+		A16D4E211ECCEE4600DE3441 /* UserLoginAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginAPI.h; sourceTree = "<group>"; };
+		A16D4E221ECCEE4600DE3441 /* UserLoginAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginAPI.m; sourceTree = "<group>"; };
+
 		A1C66C4949F1D8A0FC3E2BE6 /* Pods-Rest InsuredTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rest InsuredTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rest InsuredTests/Pods-Rest InsuredTests.release.xcconfig"; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,10 @@
 		019AECE11ECA36EA00D9C21A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A16D4E1E1ECCEE3700DE3441 /* UserSignupAPI.h */,
+				A16D4E1F1ECCEE3700DE3441 /* UserSignupAPI.m */,
+				A16D4E211ECCEE4600DE3441 /* UserLoginAPI.h */,
+				A16D4E221ECCEE4600DE3441 /* UserLoginAPI.m */,
 				A16D4E181ECB60C800DE3441 /* User.h */,
 				A16D4E191ECB60C800DE3441 /* User.m */,
 				7111909C1ECBA08F00A4904D /* Practice.h */,
@@ -443,6 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				713DB53C1ECA1980007B1428 /* Rest_Insured.xcdatamodeld in Sources */,
+				A16D4E231ECCEE4600DE3441 /* UserLoginAPI.m in Sources */,
+				A16D4E201ECCEE3700DE3441 /* UserSignupAPI.m in Sources */,
 				A16D4E111ECA6BFE00DE3441 /* DoctorDetailViewController.m in Sources */,
 				7111909E1ECBA08F00A4904D /* Practice.m in Sources */,
 				A16D4E141ECA6C1500DE3441 /* PracticeDetailViewController.m in Sources */,

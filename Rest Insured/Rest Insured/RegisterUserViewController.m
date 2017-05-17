@@ -7,6 +7,7 @@
 //
 
 #import "RegisterUserViewController.h"
+#import "UserSignupAPI.h"
 
 @import SearchTextField;
 
@@ -14,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *registerFullName;
 @property (weak, nonatomic) IBOutlet UITextField *registerEmailAddress;
 @property (weak, nonatomic) IBOutlet UITextField *registerPassword;
+@property (strong, nonatomic) User *registeredUser;
 @property (weak, nonatomic) IBOutlet SearchTextField *insuranceProvider;
-
 
 @end
 
@@ -31,6 +32,10 @@
 }
 
 - (IBAction)registerButtonPressed:(UIButton *)sender {
+    [UserSignupAPI userSignUpWithFullName:self.registerFullName.text email:self.registerEmailAddress.text password:self.registerPassword.text providerID:self.insuranceProvider.text andCompletion:^(User *currentUser) {
+        self.registeredUser = currentUser;
+    }];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.presentingViewController.presentingViewController dismissViewControllerAnimated:nil completion:nil];
 }
