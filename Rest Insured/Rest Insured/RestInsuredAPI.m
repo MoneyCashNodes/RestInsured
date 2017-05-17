@@ -10,9 +10,12 @@
 
 @implementation RestInsuredAPI
 
-+ (void)practiceSearch:(PracticeSearchCompletion)completion{
++ (void)practiceSearchWithLat:(NSString *)lat
+                          lon:(NSString *)lon
+                   providerID:(NSString *)provider
+                andCompletion:(PracticeSearchCompletion)completion{
     
-    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/ext/doctors?lat=47.606&lon=-122.332&range=10&insurance=regenceblueshieldofwashinton-regencewapreferredprovidernetwork&limit=5"];
+    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/ext/doctors?lat=%@&lon=%@&range=10&insurance=%@&limit=5", lat, lon, provider];
     
     NSURL *databaseURL = [NSURL URLWithString:urlString];
     
@@ -52,7 +55,10 @@
                     
                 }
                 
+                NSLog(@"%@", allPractices);
+                
             }] resume];
+    
 }
 
 @end

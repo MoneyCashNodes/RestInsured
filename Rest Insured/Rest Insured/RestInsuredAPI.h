@@ -13,6 +13,9 @@ typedef void(^PracticeSearchCompletion)(NSArray<Practice *> *allPractices);
 
 @interface RestInsuredAPI : NSObject
 
-+ (void)practiceSearch:(PracticeSearchCompletion)completion;
++ (void)practiceSearchWithLat:(NSString *)lat
+                          lon:(NSString *)lon
+                   providerID:(NSString *)provider
+                andCompletion:(PracticeSearchCompletion)completion;
 
 @end
