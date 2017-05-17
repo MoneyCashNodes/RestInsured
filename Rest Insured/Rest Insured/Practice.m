@@ -10,7 +10,7 @@
 
 @implementation Practice
 
-- (void)initWithName:(NSString *)name
+- (instancetype)initWithName:(NSString *)name
               street:(NSString *)street
                state:(NSString *)state
              zipCode:(NSString *)zip
@@ -25,6 +25,10 @@
     self.phone = phone;
     self.latitude = latitude;
     self.longitude = longitude;
+    
+    self.doctors = [[NSMutableArray alloc] init];
+    
+    return self;
     
 }
 

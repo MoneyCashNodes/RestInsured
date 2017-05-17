@@ -13,4 +13,7 @@
 @property (strong, nonatomic) NSString *doctorName;
 @property (strong, nonatomic) NSString *specialty;
 
+- (instancetype)initWithName:(NSString *)name
+                andSpecialty:(NSString *)specialty;
+
 @end
