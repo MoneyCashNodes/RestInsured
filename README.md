@@ -17,6 +17,7 @@ Brandon Little | Luay Younus | David Porter
 1) CoreLocation is the framework responsible for handling location services.
 2) MapKit is the framework used to provide the visual representation on the map.
 3) CoreData is the database used to store user's information.
+4) SearchTextField as a 3rd-party library to filter results and auto-complete the textfield.
 
 #### Features Overview
 - User Login/SignUp
@@ -27,3 +28,6 @@ Brandon Little | Luay Younus | David Porter
 #### In Development
 - Booking an appointment with a doctor.
 - Prescriptions list.
+
+#### External Framework
+- SearchTextField https://github.com/apasccon/SearchTextField
