@@ -14,5 +14,6 @@
 @property(strong, nonatomic)NSString *email;
 @property(strong, nonatomic)NSString *providerName;
 @property(strong, nonatomic)NSString *providerID;
+@property(strong, nonatomic)NSString *userID;
 
 @end
