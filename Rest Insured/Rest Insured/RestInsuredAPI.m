@@ -10,9 +10,12 @@
 
 @implementation RestInsuredAPI
 
-+ (void)practiceSearch:(PracticeSearchCompletion)completion{
++ (void)practiceSearchWithLat:(NSString *)lat
+                          lon:(NSString *)lon
+                   providerID:(NSString *)provider
+                andCompletion:(PracticeSearchCompletion)completion{
     
-    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured.herokuapp.com/ext/doctors?lat=47.606&lon=-122.332&range=10&insurance=regenceblueshieldofwashinton-regencewapreferredprovidernetwork&limit=5"];
+    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/ext/doctors?lat=%@&lon=%@&range=10&insurance=%@&limit=5", lat, lon, provider];
     
     NSURL *databaseURL = [NSURL URLWithString:urlString];
     
@@ -21,12 +24,41 @@
     [[session dataTaskWithURL:databaseURL
             completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 
-                NSDictionary *rootObject = [NSJSONSerialization JSONObjectWithData:data
-                                                                           options:NSJSONReadingMutableContainers
-                                                                             error:nil];
-                NSLog(@"ROOT OBJECT:%@", rootObject);
+                NSArray *rootObject = [NSJSONSerialization JSONObjectWithData:data
+                                                                      options:NSJSONReadingMutableContainers
+                                                                        error:nil];
+                
+                NSMutableArray *allPractices = [[NSMutableArray alloc] init];
+                
+                for (NSDictionary *practice in rootObject) {
+                    
+                    Practice *currentPractice = [[Practice alloc] initWithName:practice[@"name"]
+                                                                        street:practice[@"street"]
+                                                                         state:practice[@"state"]
+                                                                       zipCode:practice[@"zip"]
+                                                                         phone:practice[@"phone"]
+                                                                      latitude:practice[@"lat"]
+                                                                     longitude:practice[@"lon"]];
+                    
+                    NSDictionary *doctor = practice[@"doctor"];
+                    
+                    NSString *doctorName = [NSString stringWithFormat:@"%@ %@", doctor[@"doctorfirstname"], doctor[@"doctorlastname"]];
+                    Doctor *currentDoctor = [[Doctor alloc] initWithName:doctorName
+                                                            andSpecialty:doctor[@"specialty"]];
+                    
+                    NSLog(@"%@", currentDoctor.doctorName);
+                    
+                    [currentPractice.doctors addObject:currentDoctor];
+                    
+                    
+                    [allPractices addObject:currentPractice];
+                    
+                }
+                
+                NSLog(@"%@", allPractices);
                 
             }] resume];
+    
 }
 
 @end

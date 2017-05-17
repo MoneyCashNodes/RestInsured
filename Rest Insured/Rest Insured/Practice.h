@@ -18,6 +18,14 @@
 @property (strong, nonatomic) NSString *phone;
 @property (strong, nonatomic) NSNumber *latitude;
 @property (strong, nonatomic) NSNumber *longitude;
-@property (strong, nonatomic) NSArray<Doctor *> *doctors;
+@property (strong, nonatomic) NSMutableArray<Doctor *> *doctors;
+
+- (instancetype)initWithName:(NSString *)name
+              street:(NSString *)street
+               state:(NSString *)state
+             zipCode:(NSString *)zip
+               phone:(NSString *)phone
+            latitude:(NSNumber *)latitude
+           longitude:(NSNumber *)longitude;
 
 @end

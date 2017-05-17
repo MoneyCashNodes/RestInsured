@@ -48,8 +48,10 @@
 
 
 - (IBAction)findButtonPressed:(id)sender {
+    //only temporary, not for final version
+    NSString *tempString = @"regenceblueshieldofwashinton-regencewapreferredprovidernetwork";
     
-    [RestInsuredAPI practiceSearch:^(NSArray<Practice *> *allPractices) {
+    [RestInsuredAPI practiceSearchWithLat:@"47.637" lon:@"-122.335" providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
     }];
     

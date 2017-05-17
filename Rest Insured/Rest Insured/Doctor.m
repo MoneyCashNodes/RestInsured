@@ -10,11 +10,13 @@
 
 @implementation Doctor
 
-- (void)initWithName:(NSString *)name
-        andSpecialty:(NSString *)specialty{
+- (instancetype)initWithName:(NSString *)name
+                andSpecialty:(NSString *)specialty{
     
     self.doctorName = name;
     self.specialty = specialty;
+    
+    return self;
     
 }
 
