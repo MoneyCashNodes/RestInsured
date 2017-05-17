@@ -10,12 +10,13 @@
 
 @implementation User
 
--(instancetype)initWithName:(NSString *) fullName email:(NSString *) email providerName:(NSString *) providerName providerID:(NSString *) providerID {
+-(instancetype)initWithName:(NSString *) fullName email:(NSString *) email providerName:(NSString *) providerName providerID:(NSString *) providerID userID:(NSString *) userID {
     
     self.fullName = fullName;
     self.email = email;
     self.providerName = providerName;
     self.providerID = providerID;
+    self.userID = userID;
     
     return self;
     

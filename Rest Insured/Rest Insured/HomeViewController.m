@@ -11,6 +11,9 @@
 #import "User.h"
 #import "RestInsuredAPI.h"
 
+@import MapKit;
+@import CoreLocation;
+
 @interface HomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
