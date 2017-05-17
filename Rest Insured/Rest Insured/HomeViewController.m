@@ -26,18 +26,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
     [self checkCurrentUser];
 }
 
 //Check for currentUser, push to LoginViewController if nil
 - (void)checkCurrentUser{
     if (!self.currentUser) {
-        LoginViewController *loginView = [[LoginViewController alloc] init];
-        [self.navigationController pushViewController:loginView animated:YES];
+        LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        [self presentViewController:loginVC animated:YES completion:nil];
+    } else {
+        [self setupServer];
     }
 }
 
+- (void)setupServer{
+    
+}
 
 
 - (IBAction)findButtonPressed:(id)sender {

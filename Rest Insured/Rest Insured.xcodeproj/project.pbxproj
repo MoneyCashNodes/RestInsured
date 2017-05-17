@@ -139,13 +139,13 @@
 			children = (
 				A16D4E181ECB60C800DE3441 /* User.h */,
 				A16D4E191ECB60C800DE3441 /* User.m */,
-				713DB53A1ECA1980007B1428 /* Rest_Insured.xcdatamodeld */,
 				7111909C1ECBA08F00A4904D /* Practice.h */,
 				7111909D1ECBA08F00A4904D /* Practice.m */,
 				7111909F1ECBA0A100A4904D /* Doctor.h */,
 				711190A01ECBA0A100A4904D /* Doctor.m */,
 				711190A21ECBAC0B00A4904D /* RestInsuredAPI.h */,
 				711190A31ECBAC0B00A4904D /* RestInsuredAPI.m */,
+				713DB53A1ECA1980007B1428 /* Rest_Insured.xcdatamodeld */,
 			);
 			name = Models;
 			sourceTree = "<group>";
