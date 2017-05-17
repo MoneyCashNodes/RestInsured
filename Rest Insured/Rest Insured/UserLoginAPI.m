@@ -22,7 +22,7 @@
     [[session dataTaskWithURL:databaseURL
             completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 
-                NSArray *rootObject = [NSJSONSerialization JSONObjectWithData:data
+                NSString *rootObject = [NSJSONSerialization JSONObjectWithData:data
                                                                       options:NSJSONReadingMutableContainers
                                                                         error:nil];
             }] resume];
