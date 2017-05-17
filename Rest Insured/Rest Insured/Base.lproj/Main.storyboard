@@ -445,7 +445,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTm-o2-WcA">
-                                <rect key="frame" x="67.5" y="141" width="240" height="60"/>
+                                <rect key="frame" x="67.5" y="185" width="240" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="uaj-1Y-P4x"/>
                                     <constraint firstAttribute="height" constant="60" id="xCA-fN-Ywk"/>
@@ -455,7 +455,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rda-D7-b0R">
-                                <rect key="frame" x="67.5" y="221" width="240" height="60"/>
+                                <rect key="frame" x="67.5" y="265" width="240" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0E6-uB-IPv"/>
                                     <constraint firstAttribute="width" constant="240" id="PlL-ep-Giq"/>
@@ -465,7 +465,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugy-8I-jin">
-                                <rect key="frame" x="67" y="301" width="240" height="60"/>
+                                <rect key="frame" x="67" y="345" width="240" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="QOg-6W-oqR"/>
                                     <constraint firstAttribute="height" constant="60" id="UKN-sk-qaw"/>
@@ -474,8 +474,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insurance Provider" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWz-Tz-mTB">
-                                <rect key="frame" x="67.5" y="381" width="240" height="60"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insurance Provider" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWz-Tz-mTB" customClass="SearchTextField" customModule="SearchTextField">
+                                <rect key="frame" x="67.5" y="425" width="240" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2ZO-hb-f1X"/>
                                     <constraint firstAttribute="width" constant="240" id="kVu-v2-eGm"/>
@@ -485,13 +485,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wE-8m-68m">
-                                <rect key="frame" x="187.5" y="60" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.5" y="104" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register a new user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="to2-cK-ffT">
-                                <rect key="frame" x="76.5" y="60" width="222.5" height="31"/>
+                                <rect key="frame" x="76.5" y="104" width="222.5" height="31"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -524,7 +524,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="insuranceProvider" destination="jWz-Tz-mTB" id="qQb-DP-RVH"/>
+                        <outlet property="insuranceProvider" destination="jWz-Tz-mTB" id="QFD-mC-I3K"/>
                         <outlet property="registerEmailAddress" destination="rda-D7-b0R" id="7tI-U7-IYO"/>
                         <outlet property="registerFullName" destination="sTm-o2-WcA" id="ybc-qw-8XG"/>
                         <outlet property="registerPassword" destination="Ugy-8I-jin" id="nMr-Pn-Mic"/>
