@@ -6,7 +6,7 @@
 
 Brandon Little | Luay Younus | David Porter
 :----------------------------:|:----------------------------: | :------:
-[![Brandon Little](https://github.com/MoneyCashNodes/RestInsured/blob/master/Rest%20Insured/ReadmeAssets/BrandonLittleSmall.jpeg)](https://github.com/brlittle86) | [![Luay Younus](Rest Insured/ReadmeAssets/LuayYounusSmall.jpeg)](https://github.com/luayyounus) | [![David Porter](Rest Insured/ReadmeAssets/DavidPorterSmall.jpeg)](https://github.com/thegrimheep)
+[![Brandon Little](https://github.com/MoneyCashNodes/RestInsured/blob/master/Rest%20Insured/ReadmeAssets/BrandonLittleSmall.jpeg)](https://github.com/brlittle86) | [![Luay Younus](https://github.com/MoneyCashNodes/RestInsured/blob/master/Rest%20Insured/ReadmeAssets/LuayYounusSmall.jpeg)](https://github.com/luayyounus) | [![David Porter](https://github.com/MoneyCashNodes/RestInsured/blob/master/Rest%20Insured/ReadmeAssets/DavidPorterSmall.jpeg)](https://github.com/thegrimheep)
 
 ##### Code Fellows iOS Project written in Objective-C
 
