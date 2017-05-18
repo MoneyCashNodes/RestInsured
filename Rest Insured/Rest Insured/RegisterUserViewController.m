@@ -31,6 +31,10 @@
 }
 
 - (IBAction)registerButtonPressed:(UIButton *)sender {
+    //Full Name
+    [[NSUserDefaults standardUserDefaults] setValue:self.registerFullName.text forKey:@"fullName"];
+    
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.presentingViewController.presentingViewController dismissViewControllerAnimated:nil completion:nil];
 }
