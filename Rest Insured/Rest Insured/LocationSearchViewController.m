@@ -21,8 +21,13 @@
     
     self.resultsTableView.delegate = self;
     self.resultsTableView.dataSource = self;
-    
+    [self.navigationController setNavigationBarHidden:NO];
     NSLog(@"%@", self.allPractices);
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

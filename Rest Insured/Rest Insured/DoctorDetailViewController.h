@@ -10,7 +10,4 @@
 
 @interface DoctorDetailViewController : UIViewController
 
-@property (strong, nonatomic) NSString *doctorName;
-@property (strong, nonatomic) NSString *doctorSpecialty;
-
 @end

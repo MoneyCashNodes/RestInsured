@@ -31,10 +31,11 @@
     
 }
 
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    DoctorDetailViewController *doctorVC = [segue destinationViewController];
-    doctorVC.doctorName = @"doctor Name";
-    doctorVC.doctorSpecialty = @"Whatever";
+//    DoctorDetailViewController *doctorVC = [segue destinationViewController];
+//    doctorVC.doctorName = @"doctor Name";
+//    doctorVC.doctorSpecialty = @"Whatever";
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -52,6 +53,9 @@
     [self performSegueWithIdentifier:@"DoctorDetailViewController" sender:self];
 }
 
+- (IBAction)showMapPressed:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"MapViewController" sender:self];
+}
 
 
 @end
