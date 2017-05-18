@@ -13,19 +13,33 @@
 +(void)userLoginWithEmail:(NSString *)email
                  password:(NSString *)password {
     
-    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/signin?email=%@&password=%@", email, password];
+    NSURL *url = [NSURL URLWithString:@"https://rest-insured-staging.herokuapp.com/api/signin"];
     
-    NSURL *databaseURL = [NSURL URLWithString:urlString];
+    NSError *error;
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    [request setHTTPMethod:@"GET"];
+    
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    
+    NSDictionary *signinUser = @{@"email": email, @"password": password};
+    
+    NSData *getData = [NSJSONSerialization dataWithJSONObject:signinUser options:0 error:&error];
+    
+    [request setHTTPBody:getData];
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
     
-    [[session dataTaskWithURL:databaseURL
-            completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-                
-                NSString *rootObject = [NSJSONSerialization JSONObjectWithData:data
-                                                                      options:NSJSONReadingMutableContainers
-                                                                        error:nil];
-            }] resume];
+    [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSString *rootObject = [[NSString alloc] initWithData:data encoding:kCFStringEncodingUTF8];
+        
+        NSLog(@"RESPONSE: %@", response);
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        }
+        NSLog(@"%@", rootObject);
+    }] resume];
     
 }
 

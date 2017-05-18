@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "UserLoginAPI.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *loginEmailAddress;
@@ -28,6 +29,7 @@
 
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
+    [UserLoginAPI userLoginWithEmail:self.loginEmailAddress.text password:self.loginPassword.text];
     [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
 }
 
