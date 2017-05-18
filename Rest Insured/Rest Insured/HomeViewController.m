@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "LoginViewController.h"
+#import "LocationSearchViewController.h"
 #import "User.h"
 #import "RestInsuredAPI.h"
 
@@ -42,7 +43,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-//    [self checkCurrentUser];
+    [self checkCurrentUser];
 }
 
 //Check for currentUser, push to LoginViewController if nil
@@ -59,6 +60,13 @@
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    LocationSearchViewController *destinationVC = [segue destinationViewController];
+    
+    destinationVC.allPractii = self.practices;
+    
+}
+
 
 - (IBAction)findButtonPressed:(id)sender {
     //only temporary, not for final version
@@ -71,6 +79,8 @@
     
     [RestInsuredAPI practiceSearchWithLat:lat lon:lon providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
+        
+        [self.navigationController performSegueWithIdentifier:@"LocationSearch" sender:self];
     }];
     
 }

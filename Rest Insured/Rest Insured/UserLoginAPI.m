@@ -15,26 +15,22 @@
     
     NSURL *url = [NSURL URLWithString:@"https://rest-insured-staging.herokuapp.com/api/signin"];
     
-    NSError *error;
-    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     [request setHTTPMethod:@"GET"];
     
-    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    NSString *authStr = [NSString stringWithFormat:@"%@:%@", email, password];
+    NSData *authData = [authStr dataUsingEncoding:kCFStringEncodingUTF8];
+    NSString *authValue = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength]];
     
-    NSDictionary *signinUser = @{@"email": email, @"password": password};
-    
-    NSData *getData = [NSJSONSerialization dataWithJSONObject:signinUser options:0 error:&error];
-    
-    [request setHTTPBody:getData];
+    [request addValue:authValue forHTTPHeaderField:@"Authorization"];
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
     
     [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSString *rootObject = [[NSString alloc] initWithData:data encoding:kCFStringEncodingUTF8];
         
-        NSLog(@"RESPONSE: %@", response);
+        NSLog(@"LOGIN RESPONSE: %@", response);
         if (error) {
             NSLog(@"%@", error.localizedDescription);
         }

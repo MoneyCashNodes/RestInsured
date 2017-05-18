@@ -11,6 +11,7 @@
 @interface LocationSearchViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *resultsTableView;
 
+
 @end
 
 @implementation LocationSearchViewController
@@ -20,6 +21,8 @@
     
     self.resultsTableView.delegate = self;
     self.resultsTableView.dataSource = self;
+    
+    NSLog(@"%@", self.allPractii);
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
