@@ -59,6 +59,18 @@
         [[NSUserDefaults standardUserDefaults] setValue:self.registerPassword.text forKey:@"password"];
     }
     
+    //Insurance Provider
+    NSArray *testArray = @[@"Insurance 1",@"Insurance 2",@"Insurance 3"]; //replace with the array of insurance providers
+
+    [self.insuranceProvider filterStrings:testArray];
+    
+    if ([testArray containsObject:self.insuranceProvider.text]) {
+        [[NSUserDefaults standardUserDefaults] setValue:self.registerPassword.text forKey:@"insuranceProvider"];
+    } else {
+        NSLog(@"Please choose your insurance Provider");
+    }
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.presentingViewController.presentingViewController dismissViewControllerAnimated:nil completion:nil];
