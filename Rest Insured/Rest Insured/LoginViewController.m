@@ -29,8 +29,10 @@
 
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
+
     [UserLoginAPI userLoginWithEmail:self.loginEmailAddress.text password:self.loginPassword.text];
     [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
+
 }
 
 

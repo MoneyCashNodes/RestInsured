@@ -48,11 +48,12 @@
 
 //Check for currentUser, push to LoginViewController if nil
 - (void)checkCurrentUser{
-    if (!self.currentUser) {
+    Boolean userIsLoggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"kUserLoggedIn"];
+    if (!userIsLoggedIn) {
         LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
         [self presentViewController:loginVC animated:YES completion:nil];
     } else {
-        [self setupServer];
+        NSLog(@"user is logged in");
     }
 }
 
@@ -66,7 +67,6 @@
     destinationVC.allPractii = self.practices;
     
 }
-
 
 - (IBAction)findButtonPressed:(id)sender {
     //only temporary, not for final version
