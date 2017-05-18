@@ -48,6 +48,18 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     
+    //Password
+    if (self.registerPassword.text.length < 7 || self.registerPassword.text.length > 20) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Too short" message:@"Please make sure to use 6-20 characters" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    } else {
+        [[NSUserDefaults standardUserDefaults] setValue:self.registerPassword.text forKey:@"password"];
+    }
+    
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.presentingViewController.presentingViewController dismissViewControllerAnimated:nil completion:nil];
 }
