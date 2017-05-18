@@ -46,5 +46,8 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, 500.0, 500.0);
     [self.mapView setRegion:region animated:YES];
 }
+- (IBAction)dismissMapViewController:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
