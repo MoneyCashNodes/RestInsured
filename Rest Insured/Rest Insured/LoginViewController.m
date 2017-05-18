@@ -25,6 +25,8 @@
     [self.navigationController setNavigationBarHidden:YES];
 
 }
+
+
 - (IBAction)loginButtonPressed:(UIButton *)sender {
     NSString *emailAddress = [[NSUserDefaults standardUserDefaults] stringForKey:@"emailAddress"];
     NSString *password = [[NSUserDefaults standardUserDefaults] stringForKey:@"password"];
