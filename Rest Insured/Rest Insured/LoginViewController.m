@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "UserLoginAPI.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *loginEmailAddress;
@@ -28,18 +29,10 @@
 
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
-    NSString *emailAddress = [[NSUserDefaults standardUserDefaults] stringForKey:@"emailAddress"];
-    NSString *password = [[NSUserDefaults standardUserDefaults] stringForKey:@"password"];
-    
-    if (self.loginEmailAddress.text == emailAddress && self.loginPassword.text == password) {
-        [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
-        [self dismissViewControllerAnimated:YES completion:nil];
-    } else {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Email or Password incorrect" message:@"Please try again" preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
-        [alert addAction:okButton];
-    }
+
+    [UserLoginAPI userLoginWithEmail:self.loginEmailAddress.text password:self.loginPassword.text];
+    [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
+
 }
 
 
