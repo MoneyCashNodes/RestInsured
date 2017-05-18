@@ -11,6 +11,6 @@
 
 @interface LocationSearchViewController : UIViewController
 
-@property (strong, nonatomic) NSArray<Practice *> *allPractii;
+@property (strong, nonatomic) NSArray<Practice *> *allPractices;
 
 @end

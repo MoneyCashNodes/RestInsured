@@ -24,6 +24,27 @@
     [super tearDown];
 }
 
+- (void)testUserSignUpWithFullName {
+    
+    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/ext/doctors?lat=%f&lon=%f&range=10&insurance=%@&limit=5", 47.6224101, -122.3425608, @"IHC Group"];
+    
+    NSURL *databaseURL = [NSURL URLWithString:urlString];
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
+    
+    [[session dataTaskWithURL:databaseURL
+            completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                
+                NSArray *rootObject = [NSJSONSerialization JSONObjectWithData:data
+                                                                      options:NSJSONReadingMutableContainers
+                                                                        error:nil];
+                XCTAssert([rootObject isKindOfClass:[NSArray class]]);
+                XCTAssertTrue(response, @"Response is false");
+                XCTAssertNil(error.localizedDescription,@"Error is nil");
+                
+            }] resume];
+}
+
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.

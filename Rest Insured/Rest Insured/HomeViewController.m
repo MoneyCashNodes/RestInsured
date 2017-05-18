@@ -40,6 +40,10 @@
     [self.locationManager startUpdatingLocation];
     
     [self.locationManager requestAlwaysAuthorization];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -53,7 +57,7 @@
         LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
         [self presentViewController:loginVC animated:YES completion:nil];
     } else {
-        NSLog(@"user is logged in");
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
@@ -64,7 +68,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     LocationSearchViewController *destinationVC = [segue destinationViewController];
     
-    destinationVC.allPractii = self.practices;
+    destinationVC.allPractices = self.practices;
     
 }
 
@@ -81,6 +85,7 @@
         self.practices = allPractices;
         
         [self.navigationController performSegueWithIdentifier:@"LocationSearch" sender:self];
+        
     }];
     
 }

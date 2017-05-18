@@ -22,7 +22,7 @@
     self.resultsTableView.delegate = self;
     self.resultsTableView.dataSource = self;
     
-    NSLog(@"%@", self.allPractii);
+    NSLog(@"%@", self.allPractices);
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -34,6 +34,10 @@
     //incomplete code
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"PracticeDetail" sender:self];
 }
 
 @end

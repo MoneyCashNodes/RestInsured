@@ -7,8 +7,9 @@
 //
 
 #import "PracticeDetailViewController.h"
+#import "DoctorDetailViewController.h"
 
-@interface PracticeDetailViewController ()
+@interface PracticeDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *practiceNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *practiceLocationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *practicePhoneLabel;
@@ -20,10 +21,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.doctorsTableView.delegate = self;
+    self.doctorsTableView.dataSource = self;
+    
 }
+
 
 -(void)locationControllerUpdatedLocation:(CLLocation *)location{
     
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    DoctorDetailViewController *doctorVC = [segue destinationViewController];
+    doctorVC.doctorName = @"doctor Name";
+    doctorVC.doctorSpecialty = @"Whatever";
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    //using stand-in integer until further work is done
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //incomplete code
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"DoctorDetailViewController" sender:self];
+}
+
+
 
 @end
