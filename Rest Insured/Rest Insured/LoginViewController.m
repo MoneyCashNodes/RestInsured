@@ -28,7 +28,18 @@
 
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
-    [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
+    NSString *emailAddress = [[NSUserDefaults standardUserDefaults] stringForKey:@"emailAddress"];
+    NSString *password = [[NSUserDefaults standardUserDefaults] stringForKey:@"password"];
+    
+    if (self.loginEmailAddress.text == emailAddress && self.loginPassword.text == password) {
+        [[NSUserDefaults standardUserDefaults] setBool: YES forKey: @"kUserLoggedIn"];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Email or Password incorrect" message:@"Please try again" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:okButton];
+    }
 }
 
 

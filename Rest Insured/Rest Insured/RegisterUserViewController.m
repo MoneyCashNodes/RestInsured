@@ -32,6 +32,7 @@
 }
 
 - (IBAction)registerButtonPressed:(UIButton *)sender {
+
     [UserSignupAPI userSignUpWithFullName:self.registerFullName.text email:self.registerEmailAddress.text password:self.registerPassword.text providerID:self.insuranceProvider.text andCompletion:^(User *currentUser) {
         self.registeredUser = currentUser;
     }];
