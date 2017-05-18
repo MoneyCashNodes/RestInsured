@@ -56,8 +56,6 @@
     if (!userIsLoggedIn) {
         LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
         [self presentViewController:loginVC animated:YES completion:nil];
-    } else {
-        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
