@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Practice.h"
 
 @interface LocationSearchViewController : UIViewController
+
+@property (strong, nonatomic) NSArray<Practice *> *allPractii;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "LoginViewController.h"
+#import "LocationSearchViewController.h"
 #import "User.h"
 #import "RestInsuredAPI.h"
 
@@ -23,12 +24,22 @@
 @property (strong, nonatomic) User *currentUser;
 @property (strong, nonatomic) NSArray<Practice *> *practices;
 
+@property (strong, nonatomic) CLLocationManager *locationManager;
+
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    [self.locationManager startUpdatingLocation];
+    
+    [self.locationManager requestAlwaysAuthorization];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -37,11 +48,12 @@
 
 //Check for currentUser, push to LoginViewController if nil
 - (void)checkCurrentUser{
-    if (!self.currentUser) {
+    Boolean userIsLoggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"kUserLoggedIn"];
+    if (!userIsLoggedIn) {
         LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
         [self presentViewController:loginVC animated:YES completion:nil];
     } else {
-        [self setupServer];
+        NSLog(@"user is logged in");
     }
 }
 
@@ -49,13 +61,26 @@
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    LocationSearchViewController *destinationVC = [segue destinationViewController];
+    
+    destinationVC.allPractii = self.practices;
+    
+}
 
 - (IBAction)findButtonPressed:(id)sender {
     //only temporary, not for final version
     NSString *tempString = @"regenceblueshieldofwashinton-regencewapreferredprovidernetwork";
     
-    [RestInsuredAPI practiceSearchWithLat:@"47.637" lon:@"-122.335" providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
+    NSString *lat = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
+    NSString *lon = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
+    
+    NSLog(@"Lat: %@, Lon: %@", lat, lon);
+    
+    [RestInsuredAPI practiceSearchWithLat:lat lon:lon providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
+        
+        [self.navigationController performSegueWithIdentifier:@"LocationSearch" sender:self];
     }];
     
 }
