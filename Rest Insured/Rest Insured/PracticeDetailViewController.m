@@ -53,6 +53,7 @@
     MapViewController *destinationVC = [segue destinationViewController];
     destinationVC.lat = self.currentPractice.latitude;
     destinationVC.lon = self.currentPractice.longitude;
+    destinationVC.practiceName = self.currentPractice.practiceName;
     
 }
 

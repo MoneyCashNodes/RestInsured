@@ -20,15 +20,12 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
     [self getPracticeLocation];
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.mapView.delegate = self;
-//    self.mapView.showsUserLocation = YES;
 }
 
 -(void)getPracticeLocation{
@@ -39,11 +36,10 @@
     MKPointAnnotation *pinPointOfPractice = [[MKPointAnnotation alloc]init];
     pinPointOfPractice.coordinate = practiceCoordinate;
     
-    pinPointOfPractice.title = @"Doctors Name";
+    pinPointOfPractice.title = self.practiceName;
     
     [self.mapView addAnnotation:pinPointOfPractice];
     [self.mapView setRegion:region animated:YES];
-    
 }
 
 -(void)locationControllerUpdatedLocation:(CLLocation *)location{
@@ -54,12 +50,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
-
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     MKPinAnnotationView *pin = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:nil];
-    
-//    MKPinAnnotationView *annotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"annotationView"];
     
     pin.enabled = YES;
     pin.canShowCallout = YES;
@@ -68,6 +60,9 @@
 }
 
 - (IBAction)directionsButtonPressed:(UIButton *)sender {
+    long double latValue = [self.lat doubleValue];
+    long double lonValue = [self.lon doubleValue];
+    CLLocationCoordinate2D practiceCoordinate = CLLocationCoordinate2DMake(latValue, lonValue);
     
     UIAlertAction *googleMaps;
     UIAlertAction *appleMaps;
@@ -75,13 +70,21 @@
     
     appleMaps =[UIAlertAction actionWithTitle:@"Maps" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if (action) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"Maps://?saddr=NY&daddr=John+F.+Kennedy+International+Airport,+Van+Wyck+Expressway,+Jamaica,+New+York&directionsmode=transit"] options:@{} completionHandler:nil];
+            
+            MKPlacemark *place = [[MKPlacemark alloc]initWithCoordinate:practiceCoordinate];
+            MKMapItem *destination = [[MKMapItem alloc]initWithPlacemark:place];
+            destination.name = self.practiceName;
+            NSArray *items = [[NSArray alloc]initWithObjects:destination, nil];
+            NSDictionary *options = [[NSDictionary alloc]initWithObjectsAndKeys:MKLaunchOptionsDirectionsModeDriving, MKLaunchOptionsDirectionsModeKey, nil];
+            [MKMapItem openMapsWithItems:items launchOptions:options];
         }
     }];
     
     googleMaps = [UIAlertAction actionWithTitle:@"Google Maps" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if (action) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"comgooglemaps://?saddr=Google+Inc,+8th+Avenue,+New+York,+NY&daddr=John+F.+Kennedy+International+Airport,+Van+Wyck+Expressway,+Jamaica,+New+York&directionsmode=transit"] options:@{} completionHandler:nil];
+            NSString *queryString = [NSString stringWithFormat:@"comgooglemaps://?saddr=%f,%f&daddr=%f,%f", self.mapView.userLocation.coordinate.latitude, self.mapView.userLocation.coordinate.longitude, practiceCoordinate.latitude, practiceCoordinate.longitude];
+            NSURL *url = [NSURL URLWithString:queryString];
+            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
         }
     }];
     
@@ -101,7 +104,6 @@
     [alertView addAction:cancel];
     
     [self presentViewController:alertView animated:YES completion:nil];
-    
 }
 
 @end

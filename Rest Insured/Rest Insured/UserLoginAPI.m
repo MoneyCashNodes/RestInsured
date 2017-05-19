@@ -35,12 +35,10 @@
         
         rootObject = [rootObject substringWithRange:NSMakeRange(1, [rootObject length] - 2)];
         
-        NSLog(@"LOGIN RESPONSE: %@", response);
         if (error) {
             NSLog(@"%@", error.localizedDescription);
         }
-        NSLog(@"rootObject %@", rootObject);
-        
+    
         NSData *dataFromString = [rootObject dataUsingEncoding:NSUTF8StringEncoding];
         [[NSUserDefaults standardUserDefaults] setObject:dataFromString forKey:@"token"];
         
