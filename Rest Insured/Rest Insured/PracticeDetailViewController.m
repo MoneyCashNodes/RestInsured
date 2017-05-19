@@ -8,6 +8,7 @@
 
 #import "PracticeDetailViewController.h"
 #import "DoctorDetailViewController.h"
+#import "MapViewController.h"
 
 @interface PracticeDetailViewController () <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *practiceNameLabel;
@@ -46,6 +47,13 @@
     cell.textLabel.text = self.currentPractice.doctors[0].doctorName;
     cell.detailTextLabel.text = self.currentPractice.doctors[0].specialty;
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    MapViewController *destinationVC = [segue destinationViewController];
+    destinationVC.lat = self.currentPractice.latitude;
+    destinationVC.lon = self.currentPractice.longitude;
+    
 }
 
 - (IBAction)showMapPressed:(UIButton *)sender {
