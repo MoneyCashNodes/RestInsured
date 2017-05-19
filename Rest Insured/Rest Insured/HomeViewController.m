@@ -74,12 +74,12 @@
     //only temporary, not for final version
     NSString *tempString = @"regenceblueshieldofwashinton-regencewapreferredprovidernetwork";
     
-    NSString *lat = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
-    NSString *lon = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
+//    NSString *lat = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
+//    NSString *lon = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
+//    
+//    NSLog(@"Lat: %@, Lon: %@", lat, lon);
     
-    NSLog(@"Lat: %@, Lon: %@", lat, lon);
-    
-    [RestInsuredAPI practiceSearchWithLat:lat lon:lon providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
+    [RestInsuredAPI practiceSearchWithLat:@"47.622" lon:@"-122.326" providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
         
         [self.navigationController performSegueWithIdentifier:@"LocationSearch" sender:self];

@@ -7,11 +7,14 @@
 //
 
 #import "UserLoginAPI.h"
+#import "AppDelegate.h"
 
 @implementation UserLoginAPI
 
 +(void)userLoginWithEmail:(NSString *)email
                  password:(NSString *)password {
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     NSURL *url = [NSURL URLWithString:@"https://rest-insured-staging.herokuapp.com/api/signin"];
     
@@ -35,6 +38,8 @@
             NSLog(@"%@", error.localizedDescription);
         }
         NSLog(@"%@", rootObject);
+        
+        appDelegate.authToken = rootObject;
     }] resume];
     
 }
