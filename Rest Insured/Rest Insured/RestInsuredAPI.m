@@ -16,7 +16,7 @@
                    providerID:(NSString *)provider
                 andCompletion:(PracticeSearchCompletion)completion{
     
-    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/ext/doctors?lat=%@&lon=%@&range=10&insurance=%@&limit=5", lat, lon, provider];
+    NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/ext/doctors?lat=%@&lon=%@&range=10&insurance=%@", lat, lon, provider];
     
     NSURL *requestURL = [NSURL URLWithString:urlString];
     
@@ -65,6 +65,10 @@
                     [allPractices addObject:currentPractice];
                     
                 }
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(allPractices);
+                });
                 
             }] resume];
     
