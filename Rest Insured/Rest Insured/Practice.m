@@ -19,7 +19,7 @@
            longitude:(NSNumber *)longitude{
     
     self.practiceName = name;
-    self.street = name;
+    self.street = street;
     self.state = state;
     self.zip = zip;
     self.phone = phone;

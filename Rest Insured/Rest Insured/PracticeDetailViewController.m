@@ -9,7 +9,7 @@
 #import "PracticeDetailViewController.h"
 #import "DoctorDetailViewController.h"
 
-@interface PracticeDetailViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface PracticeDetailViewController () <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *practiceNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *practiceLocationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *practicePhoneLabel;
@@ -21,8 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.doctorsTableView.delegate = self;
     self.doctorsTableView.dataSource = self;
+    
+    self.practiceNameLabel.text = self.currentPractice.practiceName;
+    self.practiceLocationLabel.text = [NSString stringWithFormat:@"%@, %@ %@", self.currentPractice.street, self.currentPractice.state, self.currentPractice.zip];
+    self.practicePhoneLabel.text = [NSString stringWithFormat:@"Phone: %@", self.currentPractice.phone];
     
 }
 
@@ -31,26 +34,18 @@
     
 }
 
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//    DoctorDetailViewController *doctorVC = [segue destinationViewController];
-//    doctorVC.doctorName = @"doctor Name";
-//    doctorVC.doctorSpecialty = @"Whatever";
-}
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    //using stand-in integer until further work is done
     return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //incomplete code
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.currentPractice.doctors[0].doctorName;
+    cell.detailTextLabel.text = self.currentPractice.doctors[0].specialty;
     return cell;
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"DoctorDetailViewController" sender:self];
 }
 
 - (IBAction)showMapPressed:(UIButton *)sender {
