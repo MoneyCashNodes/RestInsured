@@ -49,6 +49,35 @@
     [self.presentingViewController.presentingViewController dismissViewControllerAnimated:nil completion:nil];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    [self animateTextField:self.insuranceProvider up:YES];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    [self animateTextField:self.insuranceProvider up:NO];
+}
+
+- (void)animateTextField:(UITextField*)textField up:(BOOL)moveUp{
+    
+    int movementDistance = -180;
+    float movementDuration = 0.3;
+    int movement = 0;
+    if (moveUp) {
+        movement = movementDistance;
+    } else {
+        movement = -movementDistance;
+    }
+    [UIView beginAnimations: @"animateTextField" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
+}
+
 -(void)viewDidAppear:(BOOL)animated{
     NSArray *providersList = @[@"advantagehealthsolutions-advantagehealth360main",
                                @"aetna-aetnaadvantage6350hix",
