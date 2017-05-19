@@ -54,15 +54,18 @@
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    [self animateTextField:self.insuranceProvider up:YES];
+    if ([self.insuranceProvider isTouchInside]) {
+        [self animateTextField:self.insuranceProvider up:YES];
+    }
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-    [self animateTextField:self.insuranceProvider up:NO];
+    if ([self.insuranceProvider isTouchInside]) {
+        [self animateTextField:self.insuranceProvider up:NO];
+    }
 }
 
 - (void)animateTextField:(UITextField*)textField up:(BOOL)moveUp{
-    
     int movementDistance = -180;
     float movementDuration = 0.3;
     int movement = 0;
