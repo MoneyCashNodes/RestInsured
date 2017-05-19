@@ -24,6 +24,7 @@
 @property (strong, nonatomic) NSArray<Practice *> *practices;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
 
 @end
 
@@ -40,6 +41,8 @@
     
     [self.locationManager requestAlwaysAuthorization];
     [self.navigationController setNavigationBarHidden:YES];
+    
+    self.logoutButton.corner
 }
 
 -(void)viewWillAppear:(BOOL)animated{
