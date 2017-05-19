@@ -27,13 +27,9 @@
     
     NSString *authToken = appDelegate.authToken;
     
-    NSLog(@"AUTH: %@", authToken);
+    NSString *authValue = [NSString stringWithFormat:@"Bearer %@", authToken];
     
-    NSString *authStr = [NSString stringWithFormat:@"%@", authToken];
-    NSData *authData = [authStr dataUsingEncoding:kCFStringEncodingUTF8];
-    NSString *authValue = [NSString stringWithFormat:@"Bearer %@", [authData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength]];
-    
-    [request addValue:authValue forHTTPHeaderField:@"Authorization"];
+    [request addValue:authValue forHTTPHeaderField:@"Authorization:"];
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
     
@@ -62,7 +58,6 @@
                     Doctor *currentDoctor = [[Doctor alloc] initWithName:doctorName
                                                             andSpecialty:doctor[@"specialty"]];
                     
-                    NSLog(@"%@", currentDoctor.doctorName);
                     
                     [currentPractice.doctors addObject:currentDoctor];
                     
@@ -70,8 +65,6 @@
                     [allPractices addObject:currentPractice];
                     
                 }
-                
-                NSLog(@"%@", allPractices);
                 
             }] resume];
     

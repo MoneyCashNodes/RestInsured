@@ -7,6 +7,7 @@
 //
 
 #import "LocationSearchViewController.h"
+#import "Practice.h"
 
 @interface LocationSearchViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *resultsTableView;
@@ -22,7 +23,7 @@
     self.resultsTableView.delegate = self;
     self.resultsTableView.dataSource = self;
     [self.navigationController setNavigationBarHidden:NO];
-    NSLog(@"%@", self.allPractices);
+    NSLog(@"Search View: %@", self.allPractices);
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -37,7 +38,14 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //incomplete code
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    }
+    
+    Practice *practice = self.allPractices[indexPath.row];
+    
+    cell.textLabel.text = practice.practiceName;
     return cell;
 }
 
