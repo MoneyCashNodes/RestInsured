@@ -43,6 +43,10 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES];
 }
@@ -80,6 +84,8 @@
     
     [RestInsuredAPI practiceSearchWithLat:lat lon:lon providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
+        
+        NSLog(@"THE ONE%@", allPractices);
         
         [self performSegueWithIdentifier:@"LocationSearch" sender:self];
         
