@@ -25,6 +25,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO];
+    
+    self.registerFullName.delegate = self;
+    self.registerEmailAddress.delegate = self;
+    self.registerPassword.delegate = self;
+    self.insuranceProvider.delegate = self;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 -(void)viewDidAppear:(BOOL)animated{

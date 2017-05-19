@@ -93,9 +93,7 @@
 		A16D4E1F1ECCEE3700DE3441 /* UserSignupAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSignupAPI.m; sourceTree = "<group>"; };
 		A16D4E211ECCEE4600DE3441 /* UserLoginAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginAPI.h; sourceTree = "<group>"; };
 		A16D4E221ECCEE4600DE3441 /* UserLoginAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginAPI.m; sourceTree = "<group>"; };
-
 		A1C66C4949F1D8A0FC3E2BE6 /* Pods-Rest InsuredTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rest InsuredTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rest InsuredTests/Pods-Rest InsuredTests.release.xcconfig"; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,7 +299,7 @@
 				TargetAttributes = {
 					713DB52A1ECA1980007B1428 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = PQL3EX4TE2;
+						DevelopmentTeam = AB9NKXMTZH;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -610,7 +608,7 @@
 			baseConfigurationReference = 0016A46B81B674F841AE83EB /* Pods-Rest Insured.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PQL3EX4TE2;
+				DEVELOPMENT_TEAM = AB9NKXMTZH;
 				INFOPLIST_FILE = "Rest Insured/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-Insured";
@@ -624,7 +622,7 @@
 			baseConfigurationReference = 114074C51D4FAFC50A8EADCD /* Pods-Rest Insured.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PQL3EX4TE2;
+				DEVELOPMENT_TEAM = AB9NKXMTZH;
 				INFOPLIST_FILE = "Rest Insured/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-Insured";
