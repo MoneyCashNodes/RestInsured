@@ -41,8 +41,6 @@
     
     [self.locationManager requestAlwaysAuthorization];
     [self.navigationController setNavigationBarHidden:YES];
-    
-    self.logoutButton.corner
 }
 
 -(void)viewWillAppear:(BOOL)animated{
