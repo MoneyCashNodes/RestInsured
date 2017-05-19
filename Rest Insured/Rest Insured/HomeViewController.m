@@ -17,7 +17,6 @@
 
 @interface HomeViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *locationTextField;
 @property (weak, nonatomic) IBOutlet UIButton *getCurrentLocationButton;
 

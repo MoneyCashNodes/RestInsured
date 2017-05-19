@@ -66,7 +66,7 @@
 }
 
 - (void)animateTextField:(UITextField*)textField up:(BOOL)moveUp{
-    int movementDistance = -180;
+    int movementDistance = -140;
     float movementDuration = 0.3;
     int movement = 0;
     if (moveUp) {
@@ -82,6 +82,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO];
     NSArray *providersList = @[@"advantagehealthsolutions-advantagehealth360main",
                                @"aetna-aetnaadvantage6350hix",
                                @"aetna-aetnaadvantage6350",

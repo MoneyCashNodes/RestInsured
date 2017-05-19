@@ -25,10 +25,12 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvb-T5-V7W">
-                                <rect key="frame" x="20" y="76" width="61" height="36"/>
+                                <rect key="frame" x="20" y="76" width="72" height="36"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="0.5997163955479452" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Logout">
+                                <state key="normal" title=" Logout ">
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logoutButtonPressed:" destination="77T-vy-S8A" eventType="touchUpInside" id="yul-Tu-VjM"/>
@@ -75,12 +77,6 @@
                                     <action selector="findButtonPressed:" destination="77T-vy-S8A" eventType="touchUpInside" id="FuE-E9-SOA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-vL-xPm">
-                                <rect key="frame" x="149.33333333333337" y="116.33333333333331" width="115.66666666666663" height="31.666666666666686"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fol-YW-JoI">
                                 <rect key="frame" x="261" y="352" width="52" height="30"/>
                                 <state key="normal" title="Current"/>
@@ -92,10 +88,8 @@
                             <constraint firstItem="fol-YW-JoI" firstAttribute="bottom" secondItem="P15-ye-EGe" secondAttribute="bottom" constant="-16" id="4V4-ha-A2A"/>
                             <constraint firstItem="P15-ye-EGe" firstAttribute="centerX" secondItem="Zjh-Y6-gNN" secondAttribute="centerX" id="7Dn-yX-4dE"/>
                             <constraint firstItem="FcZ-LM-Pd3" firstAttribute="centerX" secondItem="Zjh-Y6-gNN" secondAttribute="centerX" id="Ciw-vN-ndy"/>
-                            <constraint firstItem="lp8-vL-xPm" firstAttribute="centerX" secondItem="Zjh-Y6-gNN" secondAttribute="centerX" id="N9z-0q-Np6"/>
                             <constraint firstItem="cfu-xn-la9" firstAttribute="centerX" secondItem="Zjh-Y6-gNN" secondAttribute="centerX" id="PDQ-TF-cYK"/>
                             <constraint firstItem="yvb-T5-V7W" firstAttribute="leading" secondItem="Zjh-Y6-gNN" secondAttribute="leading" constant="20" id="PYU-2X-zEB"/>
-                            <constraint firstItem="cfu-xn-la9" firstAttribute="top" secondItem="lp8-vL-xPm" secondAttribute="bottom" constant="20" id="U3o-vu-O4P"/>
                             <constraint firstItem="Vq1-jS-OE9" firstAttribute="top" secondItem="3en-Uq-VrK" secondAttribute="bottom" id="UgC-Lb-oU0"/>
                             <constraint firstItem="yvb-T5-V7W" firstAttribute="top" secondItem="3en-Uq-VrK" secondAttribute="bottom" constant="12" id="Ure-yv-7Hb"/>
                             <constraint firstAttribute="trailing" secondItem="cfu-xn-la9" secondAttribute="trailing" constant="15" id="b2J-j8-z7X"/>
@@ -113,7 +107,6 @@
                     <connections>
                         <outlet property="getCurrentLocationButton" destination="fol-YW-JoI" id="4h9-iU-OFu"/>
                         <outlet property="locationTextField" destination="P15-ye-EGe" id="ijC-6I-ie6"/>
-                        <outlet property="welcomeLabel" destination="lp8-vL-xPm" id="7Gm-0E-u1u"/>
                         <segue destination="P9g-Gk-OvN" kind="show" identifier="LocationSearch" id="XDg-yu-a5H"/>
                     </connections>
                 </viewController>
