@@ -366,7 +366,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                             </textField>
                             <button alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8M-K1-zle">
                                 <rect key="frame" x="157" y="435" width="100" height="43"/>
@@ -398,7 +398,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKA-xn-48J">
-                                <rect key="frame" x="107" y="656" width="200" height="40"/>
+                                <rect key="frame" x="107" y="616" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="SiT-UA-zak"/>
@@ -421,7 +421,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2YC-65-n2w" firstAttribute="top" secondItem="nKA-xn-48J" secondAttribute="bottom" constant="40" id="0yh-rH-jzr"/>
+                            <constraint firstItem="2YC-65-n2w" firstAttribute="top" secondItem="nKA-xn-48J" secondAttribute="bottom" constant="80" id="0yh-rH-jzr"/>
                             <constraint firstItem="h1C-Uv-meY" firstAttribute="top" secondItem="wBp-vQ-gjA" secondAttribute="bottom" constant="40" id="8yy-bg-qVy"/>
                             <constraint firstItem="nKA-xn-48J" firstAttribute="centerX" secondItem="Voa-vC-IuR" secondAttribute="centerX" id="A4S-4x-afx"/>
                             <constraint firstAttribute="trailing" secondItem="Xfj-G9-a8s" secondAttribute="trailing" id="D0J-mk-lB1"/>
@@ -481,7 +481,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugy-8I-jin">
                                 <rect key="frame" x="87" y="345" width="240" height="60"/>
@@ -491,7 +491,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insurance Provider" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWz-Tz-mTB" customClass="SearchTextField" customModule="SearchTextField">
                                 <rect key="frame" x="87" y="425" width="240" height="60"/>
@@ -501,7 +501,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wE-8m-68m">
                                 <rect key="frame" x="207" y="104" width="0.0" height="0.0"/>
@@ -516,7 +516,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eht-rZ-JnR">
-                                <rect key="frame" x="147" y="656" width="120" height="40"/>
+                                <rect key="frame" x="147" y="616" width="120" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Mhc-OP-LyJ"/>
@@ -547,7 +547,7 @@
                             <constraint firstItem="WxS-EL-j8H" firstAttribute="leading" secondItem="cvC-rJ-uTb" secondAttribute="leading" id="OZD-qX-0he"/>
                             <constraint firstItem="3wE-8m-68m" firstAttribute="centerX" secondItem="cvC-rJ-uTb" secondAttribute="centerX" id="RhN-6l-ZPa"/>
                             <constraint firstItem="Ugy-8I-jin" firstAttribute="top" secondItem="rda-D7-b0R" secondAttribute="bottom" constant="20" id="bai-EZ-Szd"/>
-                            <constraint firstItem="AbW-Y0-2Kj" firstAttribute="top" secondItem="eht-rZ-JnR" secondAttribute="bottom" constant="40" id="cgI-7m-GD6"/>
+                            <constraint firstItem="AbW-Y0-2Kj" firstAttribute="top" secondItem="eht-rZ-JnR" secondAttribute="bottom" constant="80" id="cgI-7m-GD6"/>
                             <constraint firstItem="WxS-EL-j8H" firstAttribute="top" secondItem="QRj-99-hJQ" secondAttribute="bottom" id="h11-d3-ehJ"/>
                             <constraint firstItem="3wE-8m-68m" firstAttribute="top" secondItem="QRj-99-hJQ" secondAttribute="bottom" constant="40" id="hqr-xC-HGL"/>
                             <constraint firstItem="jWz-Tz-mTB" firstAttribute="top" secondItem="Ugy-8I-jin" secondAttribute="bottom" constant="20" id="iHR-76-PIf"/>
