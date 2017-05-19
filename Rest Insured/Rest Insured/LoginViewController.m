@@ -20,7 +20,16 @@
 - (void)viewDidLoad {   
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES];
+    
+    self.loginEmailAddress.delegate = self;
+    self.loginPassword.delegate = self;
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES];
 
