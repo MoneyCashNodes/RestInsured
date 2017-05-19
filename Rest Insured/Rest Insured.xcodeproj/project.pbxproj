@@ -299,7 +299,7 @@
 				TargetAttributes = {
 					713DB52A1ECA1980007B1428 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = AB9NKXMTZH;
+						DevelopmentTeam = 6572E988F5;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -608,7 +608,7 @@
 			baseConfigurationReference = 0016A46B81B674F841AE83EB /* Pods-Rest Insured.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AB9NKXMTZH;
+				DEVELOPMENT_TEAM = 6572E988F5;
 				INFOPLIST_FILE = "Rest Insured/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-Insured";
@@ -622,7 +622,7 @@
 			baseConfigurationReference = 114074C51D4FAFC50A8EADCD /* Pods-Rest Insured.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AB9NKXMTZH;
+				DEVELOPMENT_TEAM = 6572E988F5;
 				INFOPLIST_FILE = "Rest Insured/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonlittle.Rest-Insured";

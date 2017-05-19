@@ -42,6 +42,7 @@
     [self.locationManager requestAlwaysAuthorization];
     [self.navigationController setNavigationBarHidden:YES];
 }
+
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES];
 }
@@ -50,6 +51,8 @@
     [self checkCurrentUser];
 }
 
+
+
 //Check for currentUser, push to LoginViewController if nil
 - (void)checkCurrentUser{
     Boolean userIsLoggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"kUserLoggedIn"];
@@ -57,10 +60,6 @@
         LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
         [self presentViewController:loginVC animated:YES completion:nil];
     }
-}
-
-- (void)setupServer{
-    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -87,5 +86,12 @@
     }];
     
 }
+
+- (IBAction)logoutButtonPressed:(UIButton *)sender {
+    [[NSUserDefaults standardUserDefaults] setBool: NO forKey: @"kUserLoggedIn"];
+    LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    [self presentViewController:loginVC animated:YES completion:nil];
+}
+
 
 @end
