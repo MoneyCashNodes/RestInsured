@@ -23,12 +23,6 @@
     if (tokenData) {
         self.authToken = [[NSString alloc]initWithData:tokenData encoding:NSUTF8StringEncoding];
     }
-    
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"kuserLoggedIn"]) {
-        //Checks if the user is logged in and if not go to LoginViewController
-    } else {
-        //show RegisterUserViewController
-    }
     return YES;
 }
 
