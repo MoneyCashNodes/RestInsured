@@ -19,10 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"kuserLoggedIn"]) {
-        //Checks if the user is logged in and if not go to LoginViewController
-    } else {
-        //show RegisterUserViewController
+    NSData *tokenData = [[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
+    if (tokenData) {
+        self.authToken = [[NSString alloc]initWithData:tokenData encoding:NSUTF8StringEncoding];
     }
     return YES;
 }
