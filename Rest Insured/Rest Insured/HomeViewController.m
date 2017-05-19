@@ -82,7 +82,7 @@
     [RestInsuredAPI practiceSearchWithLat:@"47.622" lon:@"-122.326" providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
         
-        [self.navigationController performSegueWithIdentifier:@"LocationSearch" sender:self];
+        [self performSegueWithIdentifier:@"LocationSearch" sender:self];
         
     }];
     
