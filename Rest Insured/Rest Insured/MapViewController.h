@@ -10,4 +10,7 @@
 
 @interface MapViewController : UIViewController
 
+@property(strong, nonatomic)NSNumber *lat;
+@property(strong, nonatomic)NSNumber *lon;
+
 @end

@@ -18,6 +18,8 @@
 @property (strong, nonatomic) User *registeredUser;
 @property (weak, nonatomic) IBOutlet SearchTextField *insuranceProvider;
 
+@property (strong, nonatomic) NSArray *providers;
+
 @end
 
 @implementation RegisterUserViewController
@@ -30,6 +32,7 @@
     self.registerEmailAddress.delegate = self;
     self.registerPassword.delegate = self;
     self.insuranceProvider.delegate = self;
+
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
