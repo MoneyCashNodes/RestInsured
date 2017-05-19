@@ -7,10 +7,13 @@
 //
 
 #import "LocationSearchViewController.h"
+#import "PracticeDetailViewController.h"
 #import "Practice.h"
 
 @interface LocationSearchViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *resultsTableView;
+
+@property (strong, nonatomic) Practice *selection;
 
 
 @end
@@ -48,7 +51,16 @@
     return cell;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    PracticeDetailViewController *destinationVC = [segue destinationViewController];
+    
+    destinationVC.currentPractice = self.selection;
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.selection = self.allPractices[indexPath.row];
+    
+    [self performSegueWithIdentifier:@"PracticeDetail" sender:self];
 }
 
 @end

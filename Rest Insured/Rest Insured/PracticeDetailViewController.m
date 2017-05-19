@@ -24,6 +24,8 @@
     self.doctorsTableView.delegate = self;
     self.doctorsTableView.dataSource = self;
     
+    NSLog(@"Yay: %@", self.currentPractice.practiceName);
+    
 }
 
 

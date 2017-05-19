@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 @import MapKit;
 
+#import "Practice.h"
+
 @interface PracticeDetailViewController : UIViewController
+
+@property (strong, nonatomic) Practice *currentPractice;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *location;
