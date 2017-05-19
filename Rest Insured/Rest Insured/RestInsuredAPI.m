@@ -7,6 +7,7 @@
 //
 
 #import "RestInsuredAPI.h"
+#import "AppDelegate.h"
 
 @implementation RestInsuredAPI
 
@@ -17,11 +18,26 @@
     
     NSString *urlString = [NSString stringWithFormat:@"https://rest-insured-staging.herokuapp.com/ext/doctors?lat=%@&lon=%@&range=10&insurance=%@&limit=5", lat, lon, provider];
     
-    NSURL *databaseURL = [NSURL URLWithString:urlString];
+    NSURL *requestURL = [NSURL URLWithString:urlString];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestURL];
+    
+    [request setHTTPMethod:@"GET"];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    NSString *authToken = appDelegate.authToken;
+    
+    NSLog(@"AUTH: %@", authToken);
+    
+    NSString *authStr = [NSString stringWithFormat:@"%@", authToken];
+    NSData *authData = [authStr dataUsingEncoding:kCFStringEncodingUTF8];
+    NSString *authValue = [NSString stringWithFormat:@"Bearer %@", [authData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength]];
+    
+    [request addValue:authValue forHTTPHeaderField:@"Authorization"];
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
     
-    [[session dataTaskWithURL:databaseURL
+    [[session dataTaskWithRequest:request
             completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 
                 NSArray *rootObject = [NSJSONSerialization JSONObjectWithData:data
