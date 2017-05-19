@@ -80,17 +80,10 @@
     NSString *lat = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
     NSString *lon = [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
     
-    NSLog(@"Lat: %@, Lon: %@", lat, lon);
-    
     [RestInsuredAPI practiceSearchWithLat:lat lon:lon providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
-        
-        NSLog(@"THE ONE%@", allPractices);
-        
         [self performSegueWithIdentifier:@"LocationSearch" sender:self];
-        
     }];
-    
 }
 
 - (IBAction)logoutButtonPressed:(UIButton *)sender {

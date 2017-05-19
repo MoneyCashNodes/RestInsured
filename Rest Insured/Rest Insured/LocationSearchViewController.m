@@ -26,7 +26,6 @@
     self.resultsTableView.delegate = self;
     self.resultsTableView.dataSource = self;
     [self.navigationController setNavigationBarHidden:NO];
-    NSLog(@"Search View: %@", self.allPractices);
 }
 
 -(void)viewWillAppear:(BOOL)animated{

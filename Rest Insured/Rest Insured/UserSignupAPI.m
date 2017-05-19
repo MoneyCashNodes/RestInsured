@@ -36,8 +36,6 @@
             completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                 
                 NSString *rootObject = [[NSString alloc]initWithData:data encoding:kCFStringEncodingUTF8];
-                
-                NSLog(@"rootObject %@", rootObject);
             }] resume];
 }
 
