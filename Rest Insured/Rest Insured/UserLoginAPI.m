@@ -39,6 +39,9 @@
         }
         NSLog(@"%@", rootObject);
         
+        NSData *dataFromString = [rootObject dataUsingEncoding:NSUTF8StringEncoding];
+        [[NSUserDefaults standardUserDefaults] setObject:dataFromString forKey:@"token"];
+        
         appDelegate.authToken = rootObject;
     }] resume];
     
