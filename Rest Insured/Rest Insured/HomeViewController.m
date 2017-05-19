@@ -17,7 +17,6 @@
 
 @interface HomeViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *locationTextField;
 @property (weak, nonatomic) IBOutlet UIButton *getCurrentLocationButton;
 
@@ -25,6 +24,7 @@
 @property (strong, nonatomic) NSArray<Practice *> *practices;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
 
 @end
 
@@ -42,6 +42,11 @@
     [self.locationManager requestAlwaysAuthorization];
     [self.navigationController setNavigationBarHidden:YES];
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES];
 }
@@ -50,6 +55,8 @@
     [self checkCurrentUser];
 }
 
+
+
 //Check for currentUser, push to LoginViewController if nil
 - (void)checkCurrentUser{
     Boolean userIsLoggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"kUserLoggedIn"];
@@ -57,10 +64,6 @@
         LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
         [self presentViewController:loginVC animated:YES completion:nil];
     }
-}
-
-- (void)setupServer{
-    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -82,10 +85,19 @@
     [RestInsuredAPI practiceSearchWithLat:lat lon:lon providerID:tempString andCompletion:^(NSArray<Practice *> *allPractices) {
         self.practices = allPractices;
         
+        NSLog(@"THE ONE%@", allPractices);
+        
         [self performSegueWithIdentifier:@"LocationSearch" sender:self];
         
     }];
     
 }
+
+- (IBAction)logoutButtonPressed:(UIButton *)sender {
+    [[NSUserDefaults standardUserDefaults] setBool: NO forKey: @"kUserLoggedIn"];
+    LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    [self presentViewController:loginVC animated:YES completion:nil];
+}
+
 
 @end
