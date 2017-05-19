@@ -49,5 +49,27 @@
 - (IBAction)dismissMapViewController:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+- (IBAction)directionsButtonPressed:(UIButton *)sender {
+    
+    UIAlertAction *googleMaps;
+    UIAlertAction *cancel;
+    
+    googleMaps = [UIAlertAction actionWithTitle:@"Go To Google Maps" style:UIAlertActionStyleDefault handler:nil];
+    cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDestructive handler:nil];
+    
+    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"alert" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    alertView.modalPresentationStyle = UIModalPresentationPopover;
+    
+    [alertView addAction:googleMaps];
+    [alertView addAction:cancel];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:
+         [NSURL URLWithString:@"comgooglemaps://"]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"comgooglemaps://?saddr=Google+Inc,+8th+Avenue,+New+York,+NY&daddr=John+F.+Kennedy+International+Airport,+Van+Wyck+Expressway,+Jamaica,+New+York&directionsmode=transit"] options:@{} completionHandler:nil];
+    } else {
+        NSLog(@"Can't use comgooglemaps://");
+    }
+}
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G9Q-Bc-aXx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G9Q-Bc-aXx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -356,6 +356,9 @@
                                 <state key="normal" title="Directions">
                                     <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="directionsButtonPressed:" destination="ro1-B7-Rba" eventType="touchUpInside" id="vGq-fN-RaZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -503,9 +506,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="files2" translatesAutoresizingMaskIntoConstraints="NO" id="WxS-EL-j8H">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="files2" translatesAutoresizingMaskIntoConstraints="NO" id="WxS-EL-j8H">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTm-o2-WcA">
                                 <rect key="frame" x="67.5" y="185" width="240" height="60"/>
@@ -570,13 +572,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WxS-EL-j8H" secondAttribute="trailing" id="1YC-wd-pKe"/>
                             <constraint firstItem="eht-rZ-JnR" firstAttribute="centerX" secondItem="cvC-rJ-uTb" secondAttribute="centerX" id="EkT-8T-fwV"/>
                             <constraint firstItem="to2-cK-ffT" firstAttribute="top" secondItem="QRj-99-hJQ" secondAttribute="bottom" constant="40" id="H8c-pX-v55"/>
                             <constraint firstItem="sTm-o2-WcA" firstAttribute="top" secondItem="to2-cK-ffT" secondAttribute="bottom" constant="50" id="IfH-Aa-i14"/>
                             <constraint firstItem="to2-cK-ffT" firstAttribute="centerX" secondItem="cvC-rJ-uTb" secondAttribute="centerX" id="KoA-9x-U6k"/>
+                            <constraint firstItem="WxS-EL-j8H" firstAttribute="leading" secondItem="cvC-rJ-uTb" secondAttribute="leading" id="OZD-qX-0he"/>
                             <constraint firstItem="3wE-8m-68m" firstAttribute="centerX" secondItem="cvC-rJ-uTb" secondAttribute="centerX" id="RhN-6l-ZPa"/>
                             <constraint firstItem="Ugy-8I-jin" firstAttribute="top" secondItem="rda-D7-b0R" secondAttribute="bottom" constant="20" id="bai-EZ-Szd"/>
                             <constraint firstItem="AbW-Y0-2Kj" firstAttribute="top" secondItem="eht-rZ-JnR" secondAttribute="bottom" constant="40" id="cgI-7m-GD6"/>
+                            <constraint firstItem="WxS-EL-j8H" firstAttribute="top" secondItem="QRj-99-hJQ" secondAttribute="bottom" id="h11-d3-ehJ"/>
                             <constraint firstItem="3wE-8m-68m" firstAttribute="top" secondItem="QRj-99-hJQ" secondAttribute="bottom" constant="40" id="hqr-xC-HGL"/>
                             <constraint firstItem="jWz-Tz-mTB" firstAttribute="top" secondItem="Ugy-8I-jin" secondAttribute="bottom" constant="20" id="iHR-76-PIf"/>
                             <constraint firstItem="rda-D7-b0R" firstAttribute="centerX" secondItem="cvC-rJ-uTb" secondAttribute="centerX" id="rDy-Va-jiP"/>
@@ -584,6 +589,7 @@
                             <constraint firstItem="sTm-o2-WcA" firstAttribute="centerX" secondItem="cvC-rJ-uTb" secondAttribute="centerX" id="tWn-gU-OlD"/>
                             <constraint firstItem="rda-D7-b0R" firstAttribute="top" secondItem="sTm-o2-WcA" secondAttribute="bottom" constant="20" id="uf5-br-rDl"/>
                             <constraint firstItem="Ugy-8I-jin" firstAttribute="centerX" secondItem="cvC-rJ-uTb" secondAttribute="centerX" id="xPh-9Y-aMj"/>
+                            <constraint firstItem="AbW-Y0-2Kj" firstAttribute="top" secondItem="WxS-EL-j8H" secondAttribute="bottom" id="xRj-P1-Zkf"/>
                         </constraints>
                     </view>
                     <connections>
