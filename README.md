@@ -29,5 +29,9 @@ Brandon Little | Luay Younus | David Porter
 - Booking an appointment with a doctor.
 - Prescriptions list.
 
+### Screenshots
+![](https://media.giphy.com/media/xUA7b0prZL3EReEZDq/giphy.gif)
+![](https://media.giphy.com/media/3ohzdOJWuMyw8m4mXu/giphy.gif)
+
 #### External Framework
 - SearchTextField https://github.com/apasccon/SearchTextField
