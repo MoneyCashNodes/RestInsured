@@ -30,8 +30,16 @@ Brandon Little | Luay Younus | David Porter
 - Prescriptions list.
 
 ### Screenshots
-![](https://media.giphy.com/media/xUA7b0prZL3EReEZDq/giphy.gif)
-![](https://media.giphy.com/media/3ohzdOJWuMyw8m4mXu/giphy.gif)
+<div align="center">
+        <img width="20%" src="https://preview.ibb.co/dGMugG/001.png" alt="Screen 1" title="PicFeed-1">
+        <img height="0" width="8px">
+        <img width="20%" src="https://preview.ibb.co/eaF9Fb/002.png" alt="Screen 2" title="PicFeed-2">
+        <img height="0" width="8px">
+        <img width="20%" src="https://preview.ibb.co/kj09Fb/003.png" alt="Screen 3" title="PicFeed-3">
+        <img height="0" width="8px">
+        <img width="20%" src="https://preview.ibb.co/ireEgG/004.png" alt="Screen 4" title="PicFeed-4">
+</div>
+
 
 #### External Framework
 - SearchTextField https://github.com/apasccon/SearchTextField
